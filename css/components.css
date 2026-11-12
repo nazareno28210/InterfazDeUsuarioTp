@@ -288,6 +288,104 @@ input.real-range {
   border-radius: 9999px;
 }
 
+/* Custom Select Dropdown UI para reemplazar el menú emergente nativo */
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  z-index: 30;
+}
+
+.custom-select-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(23, 59, 50, 0.16);
+  border-radius: 9999px;
+  padding: 7px 14px 7px 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #141e1b;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(23, 59, 50, 0.06);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.custom-select-trigger:hover {
+  background-color: #ebf6f1;
+  border-color: rgba(23, 59, 50, 0.32);
+}
+
+.custom-select-trigger svg {
+  transition: transform 0.2s ease;
+}
+
+.custom-select-wrapper.is-open .custom-select-trigger svg {
+  transform: rotate(180deg);
+}
+
+.custom-select-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(23, 59, 50, 0.12);
+  box-shadow: 0 14px 32px -4px rgba(23, 59, 50, 0.2), 0 4px 12px -2px rgba(23, 59, 50, 0.08);
+  padding: 6px;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  animation: customSelectFadeIn 0.15s ease-out;
+}
+
+.custom-select-wrapper.is-open .custom-select-menu {
+  display: flex;
+}
+
+.custom-select-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #414845;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  user-select: none;
+}
+
+.custom-select-item:hover {
+  background-color: #e5f0eb;
+  color: #173b32;
+}
+
+.custom-select-item.is-selected {
+  background-color: #173b32;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.custom-select-item .item-check {
+  display: none;
+}
+
+.custom-select-item.is-selected .item-check {
+  display: block;
+}
+
+@keyframes customSelectFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* Listas desplegables (Select Lists) nativas reales con estética institucional y estilos en sus opciones */
 select.real-select {
   appearance: none;
