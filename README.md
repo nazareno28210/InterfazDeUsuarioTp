@@ -47,14 +47,34 @@ El prototipo implementa una experiencia integral de usuario para el descubrimien
   - Supresión de precios promocionales llamativos en favor de precios fijos transparentes.
   - Casilla funcional para aplicar cupón de descuento.
   - Pestañas interactivas de métodos de pago (Tarjeta de Crédito/Débito, Mercado Pago y Transferencia Bancaria).
-- **Heurísticas de usabilidad de Nielsen aplicadas**:
-  - *Heurística #1 (Visibilidad del estado del sistema)*: Breadcrumbs contextuales, contador dinámico de resultados y barra de progreso paso a paso en el checkout.
-  - *Heurística #3 (Control y libertad del usuario)*: Diálogo modal de cancelación y botón de salida segura que previene pérdidas accidentales de datos en el checkout.
-  - *Heurística #4 (Consistencia y estándares)*: Homogeneidad visual de botones, tipografías (Plus Jakarta Sans, Bricolage Grotesque) y paleta institucional fueguina.
 
 ---
 
-## 3. ¿Qué es lo que NO cumple (Limitaciones del prototipo)?
+## 3. Las 3 Heurísticas de Nielsen que Mejor Cumple el Prototipo
+
+El prototipo fue concebido y refinado aplicando los principios clásicos de usabilidad de Jakob Nielsen, destacándose con especial énfasis en tres de ellos:
+
+### 1. Heurística #1: Visibilidad del Estado del Sistema (*Visibility of System Status*)
+El sistema mantiene informado al usuario en todo momento sobre qué está ocurriendo mediante retroalimentación oportuna y visible:
+- **Catálogo reactivo y breadcrumbs**: En `explorar-cursos.html`, el usuario siempre sabe exactamente cuántas opciones coinciden con su filtro mediante un contador dinámico en tiempo real (*"380 capacitaciones activas"* vs *"24 capacitaciones activas en Gastronomía Argentina"*), complementado por migas de pan jerárquicas que muestran la ubicación exacta.
+- **Wizard de Checkout con barra de progreso**: Durante la compra, el flujo de 3 pasos exhibe claramente la fase actual (*1. Datos del Alumno* → *2. Medio de Pago* → *3. Confirmación*), indicando qué pasos ya fueron superados y cuánto resta para concluir la inscripción.
+- **Feedback de interacción**: En `detalle-curso.html`, el acordeón del programa rota suavemente el chevron indicador y resalta el número de módulo activo para confirmar visualmente el estado abierto o colapsado.
+
+### 2. Heurística #3: Control y Libertad del Usuario (*User Control and Freedom*)
+El diseño ofrece "salidas de emergencia" directas y claras en caso de que el usuario cometa un error o decida rectificar sus decisiones:
+- **Salida segura y prevención de abandono involuntario**: En cualquier punto del checkout, el enlace *"Cancelar y volver al curso"* no aborta destructivamente la operación, sino que dispara un diálogo modal de confirmación donde el usuario puede retomar la carga o confirmar la salida segura de vuelta a la ficha del curso.
+- **Rectificación y navegación bidireccional**: En el paso final de revisión (paso 3), se incorporan botones explícitos de corrección (*"Modificar datos"*, *"Modificar pago"*), permitiendo regresar a pasos previos sin forzar al usuario a empezar el formulario desde cero.
+- **Reversibilidad de filtros**: En el catálogo se provee el botón *"Limpiar filtros"* y chips desmontables con la cruz *"×"* para restablecer el catálogo al estado inicial con un solo clic.
+
+### 3. Heurística #4: Consistencia y Estándares (*Consistency and Standards*)
+La interfaz respeta rigurosamente las convenciones establecidas del diseño web moderno y plataformas formativas:
+- **Convenciones de navegación y catálogo**: Disposición estándar de barra de búsqueda superior, filtros facetados a la izquierda y grilla de tarjetas con atributos clave (modalidad, duración, institución y precio), facilitando que el usuario aplique conocimientos previos adquiridos en otros sitios sin curva de aprendizaje.
+- **Precios fijos y transparentes**: Se eliminaron los tachados y promociones engañosas para mostrar aranceles netos fijos y uniformes, transmitiendo seriedad institucional y evitando confusión sobre el costo final de la formación.
+- **Sistema visual y tipográfico homogéneo**: Empleo consistente de tipografías legibles (*Plus Jakarta Sans* y *Bricolage Grotesque*), coherencia en la jerarquía de botones de acción (primarios en verde bosque `#173b32`, secundarios en pasteles menta) e iconografía estandarizada en todas las páginas.
+
+---
+
+## 4. ¿Qué es lo que NO cumple (Limitaciones del prototipo)?
 
 - **Sin Backend ni Base de Datos**: No se conecta a una API REST, base de datos relacional ni almacén de persistencia remota. El estado vive exclusivamente en el DOM del navegador y en parámetros de URL.
 - **Sin pasarela de pagos real**: El proceso de cobro en tarjeta, Mercado Pago o transferencia bancaria es una simulación visual orientada a pruebas de interfaz; no realiza cargos monetarios reales ni valida tarjetas con entidades financieras.
@@ -63,7 +83,7 @@ El prototipo implementa una experiencia integral de usuario para el descubrimien
 
 ---
 
-## 4. ¿Qué es lo mínimo e indispensable para su funcionamiento?
+## 5. ¿Qué es lo mínimo e indispensable para su funcionamiento?
 
 Para ejecutar y probar la aplicación solo se requiere:
 
@@ -80,7 +100,7 @@ Para ejecutar y probar la aplicación solo se requiere:
 
 ---
 
-## 5. ¿Qué hace `app.js`?
+## 6. ¿Qué hace `app.js`?
 
 El archivo `app.js` actúa como el motor cliente de la aplicación, proporcionando:
 
