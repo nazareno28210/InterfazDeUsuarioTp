@@ -352,20 +352,27 @@ document.addEventListener('DOMContentLoaded', () => {
       gastroChip.style.display = isGastronomiaActive ? 'flex' : 'none';
     }
 
-    // Update top pills (only Todos los rubros vs Gastronomía Argentina)
-    function setPillActiveState(pillEl, isPillActive) {
-      if (!pillEl) return;
-      pillEl.classList.remove('bg-[#173b32]', 'bg-[#e5f0eb]');
-      pillEl.classList.add(isPillActive ? 'bg-[#173b32]' : 'bg-[#e5f0eb]');
-      pillEl.querySelectorAll('div, span').forEach((t) => {
-        if (t.children.length === 1 && t.firstElementChild?.tagName === 'P') {
-          t.classList.remove('text-white', 'text-[#414845]', 'text-[#141e1b]');
-          t.classList.add(isPillActive ? 'text-white' : 'text-[#414845]');
-        }
+    // Update top pills with mutual exclusivity
+    const horizontalPills = document.querySelector('[data-name="Horizontal Sector Pills"]');
+    if (horizontalPills) {
+      horizontalPills.querySelectorAll('div, button, a').forEach((p) => {
+        p.classList.remove('bg-[#173b32]');
+        p.classList.add('bg-[#e5f0eb]');
+        p.querySelectorAll('p').forEach((t) => {
+          t.classList.remove('text-white');
+          t.classList.add('text-[#414845]');
+        });
       });
+      const activePill = isGastronomiaActive ? gastroPill : todosPill;
+      if (activePill) {
+        activePill.classList.remove('bg-[#e5f0eb]');
+        activePill.classList.add('bg-[#173b32]');
+        activePill.querySelectorAll('p').forEach((t) => {
+          t.classList.remove('text-[#414845]');
+          t.classList.add('text-white');
+        });
+      }
     }
-    setPillActiveState(todosPill, !isGastronomiaActive);
-    setPillActiveState(gastroPill, isGastronomiaActive);
 
     // Sync Gastronomía Argentina checkbox (32:6452) without blocking other static checkboxes
     if (gastroCheckbox) {
@@ -492,6 +499,8 @@ document.addEventListener('DOMContentLoaded', () => {
           } else if (pnid === '32:6296-todos') {
             setGastronomiaFilter(false);
             return;
+          } else if (isGastronomiaActive) {
+            setGastronomiaFilter(false);
           }
         }
 
