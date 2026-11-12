@@ -4,19 +4,31 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const currentPage = document.body.getAttribute('data-page') || 'index.html';
+  const isInPagesFolder = window.location.pathname.includes('/pages/');
+
+  function resolveRoute(target) {
+    if (!target) return target;
+    const [file, query] = target.split('?');
+    const qs = query ? '?' + query : '';
+    if (file === 'index.html') {
+      return (isInPagesFolder ? '../index.html' : 'index.html') + qs;
+    }
+    return (isInPagesFolder ? file : 'pages/' + file) + qs;
+  }
+
   const cancelModal = document.getElementById('cancel-modal');
 
   function openCancelModal() {
     if (cancelModal) {
       cancelModal.setAttribute('data-open', 'true');
     } else {
-      window.location.href = 'cancelacion.html';
+      window.location.href = resolveRoute('cancelacion.html');
     }
   }
 
   function closeCancelModal() {
     if (currentPage === 'cancelacion.html') {
-      window.location.href = 'checkout-paso-2.html';
+      window.location.href = resolveRoute('checkout-paso-2.html');
       return;
     }
     if (cancelModal) {
@@ -51,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     logoEl.setAttribute('title', 'Ir a Inicio (index.html)');
     logoEl.addEventListener('click', (e) => {
       e.stopPropagation();
-      window.location.href = 'index.html';
+      window.location.href = resolveRoute('index.html');
     });
   });
 
@@ -115,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      window.location.href = 'detalle-curso.html';
+      window.location.href = resolveRoute('detalle-curso.html');
     });
   });
 
@@ -201,14 +213,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (route || action) {
       el.setAttribute('data-wired', 'true');
       el.setAttribute('data-interactive', 'true');
-      if (el.tagName === 'A' && route) {
-        el.setAttribute('href', route);
+      const resolved = route ? resolveRoute(route) : null;
+      if (el.tagName === 'A' && resolved) {
+        el.setAttribute('href', resolved);
       }
       el.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
         if (action) action();
-        else if (route) window.location.href = route;
+        else if (resolved) window.location.href = resolved;
       });
     }
   });
@@ -216,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Make Featured Category cards on Home page navigate to explorar-cursos.html
   document.querySelectorAll('[data-name="Section - Featured Categories Bento Grid"] a').forEach((card) => {
     const isGastroCard = cleanText(card).toLowerCase().includes('gastronomía');
-    const targetHref = isGastroCard ? 'explorar-cursos.html?filtro=gastronomia' : 'explorar-cursos.html';
+    const targetHref = resolveRoute(isGastroCard ? 'explorar-cursos.html?filtro=gastronomia' : 'explorar-cursos.html');
     card.setAttribute('data-wired', 'true');
     card.setAttribute('data-interactive', 'true');
     card.setAttribute('href', targetHref);
@@ -248,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
           textLeaf.blur();
           // If inside a search bar, go to explorar-cursos.html
           if (inputBox.closest('[data-name*="Search"]')) {
-            window.location.href = 'explorar-cursos.html';
+            window.location.href = resolveRoute('explorar-cursos.html');
           }
         }
       });
@@ -294,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
-          window.location.href = 'detalle-curso.html';
+          window.location.href = resolveRoute('detalle-curso.html');
         });
       }
     });
