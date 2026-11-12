@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Mirgor: Cursos y Trayectos — capacitados.ar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="academia-mirgor.html">
+  <!-- Barra flotante de navegación del prototipo (10 pantallas) -->
+  <nav class="proto-dock" aria-label="Navegación de pantallas del prototipo">
+    <div class="proto-dock-inner">
+      <span class="proto-dock-badge">PROTOTIPO · 10 PANTALLAS</span>
+      <div class="proto-dock-links">
+        <a href="index.html" class="proto-nav-link">1. Inicio</a>
+        <a href="explorar-cursos.html" class="proto-nav-link">2. Explorar Cursos</a>
+        <a href="academias.html" class="proto-nav-link">3. Academias</a>
+        <a href="academia-mirgor.html" class="proto-nav-link active">4. Cursos Academia</a>
+        <a href="detalle-curso.html" class="proto-nav-link">5. Detalle Curso</a>
+        <a href="checkout-paso-1.html" class="proto-nav-link">6. Checkout Paso 1</a>
+        <a href="checkout-paso-2.html" class="proto-nav-link">7. Checkout Paso 2</a>
+        <a href="checkout-paso-3.html" class="proto-nav-link">8. Checkout Paso 3</a>
+        <a href="confirmacion.html" class="proto-nav-link">9. Confirmación</a>
+        <a href="cancelacion.html" class="proto-nav-link">10. Modal Cancelación</a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="page-shell bg-[#f1fcf7] relative w-full" data-node-id="39:8250" data-name="pantalla de cursos de una academia">
+      <header class="backdrop-blur-[24px] bg-[rgba(241,252,247,0.85)] content-stretch flex flex-col items-center shadow-[0px_1px_8px_0px_rgba(23,59,50,0.04)] site-header" data-node-id="39:8251" data-name="Header">
+        <div class="content-stretch flex items-center justify-between max-w-[1280px] px-[24px] relative w-full justify-between mx-auto header-inner" data-node-id="I39:8251;29:4971" data-name="Container">
+          <div class="content-stretch flex gap-[12px] items-center relative" data-node-id="29:5103" data-name="Link">
+            <div class="overflow-clip relative rounded-[9px] shrink-0 size-[36px] flex items-center justify-center" data-node-id="29:4973" data-name="Profile">
+              <img src="images/logo.png" alt="capacitados.ar logo" class="size-full object-contain pointer-events-none">
+            </div>
+            <div class="content-stretch flex flex-col items-start relative" data-node-id="29:4974" data-name="Container">
+              <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="29:4975" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[20px] tracking-[-0.5px] whitespace-nowrap" data-node-id="29:4976" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                  <p><span class="leading-[20px]">capacitados</span><span class="[word-break:break-word] font-['Bricolage_Grotesque:Regular'] font-normal leading-[20px] text-[#ffb86e]" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">.ar</span></p>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-node-id="29:4977" data-name="Margin">
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="29:4978" data-name="Container">
+                  <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#414845] text-[11px] tracking-[0.55px] uppercase w-full" data-node-id="29:4979">
+                    <p class="leading-[13.2px]">POTENCIÁ TU TALENTO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[8px] items-center p-[6px] relative rounded-[9999px] shadow-[0px_1px_4px_0px_rgba(23,59,50,0.03)]" data-node-id="I39:8251;29:5094" data-name="NavBarPrincipal">
+            <a class="content-stretch cursor-pointer flex flex-col items-start px-[16px] py-[6px] relative rounded-[9999px] shrink-0" data-node-id="I39:8251;29:5094;29:5073" data-name="Link">
+              <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#414845] text-[15px] text-left tracking-[0.15px] whitespace-nowrap" data-node-id="I39:8251;29:5094;29:5074">
+                <p class="leading-[19.5px]">Inicio</p>
+              </div>
+            </a>
+            <a class="content-stretch cursor-pointer flex flex-col items-start px-[16px] py-[6px] relative rounded-[200px] shrink-0" data-node-id="I39:8251;29:5094;29:5075" data-name="Link">
+              <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#414845] text-[15px] text-left tracking-[0.15px] whitespace-nowrap" data-node-id="I39:8251;29:5094;29:5076">
+                <p class="leading-[19.5px]">Explorar Cursos</p>
+              </div>
+            </a>
+            <div class="bg-[#173b32] content-stretch flex flex-col items-start px-[16px] py-[6px] relative rounded-[200px] shrink-0" data-node-id="I39:8251;29:5094;29:5077" data-name="Link">
+              <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_-0.22px_0_0] rounded-[9999px] shadow-[0px_2px_6px_-1px_rgba(23,59,50,0.12)]" data-node-id="I39:8251;29:5094;29:5078" data-name="Link:shadow"></div>
+              <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#f1fcf7] text-[16px] whitespace-nowrap" data-node-id="I39:8251;29:5094;29:5079">
+                <p class="leading-[24px]">Academias</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-stretch flex gap-[8.01px] items-center relative" data-node-id="29:5107" data-name="LoginAndRegister">
+            <div class="content-stretch flex flex-col items-start px-[12px] py-[6px] relative rounded-[9999px] shrink-0" data-node-id="29:4989" data-name="Link">
+              <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#414845] text-[15px] tracking-[0.15px] whitespace-nowrap" data-node-id="29:4990">
+                <p class="leading-[19.5px]">Iniciar Sesión</p>
+              </div>
+            </div>
+            <div class="bg-[#173b32] content-stretch flex flex-col items-start px-[16px] py-[6px] relative rounded-[9999px] shrink-0" data-node-id="29:4991" data-name="Link">
+              <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_0_0.5px_0] rounded-[9999px] shadow-[0px_2px_6px_-1px_rgba(23,59,50,0.12)]" data-node-id="29:4992" data-name="Link:shadow"></div>
+              <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[15px] text-white tracking-[0.15px] whitespace-nowrap" data-node-id="29:4993">
+                <p class="leading-[19.5px]">Registrarse</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="bg-[#f1fcf7] content-stretch flex flex-col items-center justify-center min-h-[480px] site-main" data-node-id="39:7638" data-name="Main">
+        <div class="content-stretch flex flex-col items-center justify-center overflow-clip relative w-full" data-node-id="39:7639" data-name="Subtle decorative ambient background glow">
+          <div class="-translate-x-1/2 absolute bg-gradient-to-b blur-[64px] from-[rgba(196,235,222,0.3)] h-[350px] left-1/2 to-[rgba(223,235,230,0)] top-[-128px] via-1/2 via-[rgba(223,235,230,0.4)] w-[900px]" data-node-id="39:7640" data-name="Gradient+Blur"></div>
+          <div class="content-stretch flex flex-col gap-[40px] items-start max-w-[1280px] px-[24px] py-[16px] relative w-full" data-node-id="39:7641" data-name="Main Content Container">
+            <div class="content-stretch flex gap-[8px] items-center relative w-full responsive-wrap-mobile" data-node-id="39:7642" data-name="Nav - Breadcrumb">
+              <div class="content-stretch flex items-center relative shrink-0" data-node-id="39:7643" data-name="Link">
+                <div class="h-[13.5px] relative shrink-0 w-[12px]" data-node-id="39:7644" data-name="Container">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/b7e2ac06-0868-4b74-adf8-ebcbf47a121d.svg">
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7650" data-name="Link">
+                <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#414845] text-[13px] tracking-[0.26px] whitespace-nowrap" data-node-id="39:7651">
+                  <p class="leading-[16.9px]">Academias</p>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7652" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#c1c8c4] text-[13px] tracking-[0.26px] whitespace-nowrap" data-node-id="39:7653">
+                  <p class="leading-[16.9px]">/</p>
+                </div>
+              </div>
+              <div class="bg-[#dfebe6] content-stretch flex gap-[6px] items-center px-[10px] py-[2px] relative rounded-[9999px]" data-node-id="39:7654" data-name="Background">
+                <div class="bg-[#d29049] relative rounded-[9999px] shrink-0 size-[6px]" data-node-id="39:7655" data-name="Background"></div>
+                <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#173b32] text-[13px] tracking-[0.26px]" data-node-id="39:7656">
+                  <p class="leading-[16.9px]">Fundación Mirgor (Río Grande, TDF)</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white content-stretch flex flex-col items-start overflow-clip relative rounded-[48px] shadow-[0px_4px_24px_-4px_rgba(23,59,50,0.06)] w-full" data-node-id="39:7657" data-name="Section - 3. Hero / Encabezado Institucional">
+              <div class="bg-gradient-to-r from-[#173b32] h-[256px] mb-[-80px] overflow-clip relative to-[#173b32] via-1/2 via-[#00251d] w-full" data-node-id="39:7658" data-name="Visual Accent Header Banner">
+                <div class="absolute inset-0 mix-blend-luminosity opacity-30" data-node-id="39:7659" data-name="Image">
+                  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" class="absolute h-[262.24%] left-0 max-w-none top-[-81.12%] w-full" src="assets/14a8126b-8b29-4422-b708-43be6e030e2c.png">
+                  </div>
+                </div>
+                <div class="absolute bg-gradient-to-t from-white inset-0 to-[rgba(255,255,255,0)] via-1/2 via-[rgba(255,255,255,0.2)]" data-node-id="39:7660" data-name="Gradient"></div>
+                <div class="absolute content-center flex flex-wrap gap-[8px] items-center right-[23.99px] top-[24px] responsive-wrap-mobile" data-node-id="39:7661" data-name="Container">
+                  <div class="backdrop-blur-[12px] bg-[rgba(255,255,255,0.9)] content-stretch flex gap-[6px] items-center px-[14px] py-[6px] relative rounded-[9999px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="39:7662" data-name="Overlay+Shadow+OverlayBlur">
+                    <div class="h-[14px] relative shrink-0 w-[14.667px]" data-node-id="39:7663" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/58ce1388-d5a0-48fc-9c83-ae23d2ca9682.svg">
+                    </div>
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#173b32] text-[11px] tracking-[0.44px]" data-node-id="39:7665">
+                      <p class="leading-[13.2px]">Régimen Industrial Ley 19.640</p>
+                    </div>
+                  </div>
+                  <div class="backdrop-blur-[12px] bg-[rgba(23,59,50,0.85)] content-stretch flex gap-[6px] items-center px-[14px] py-[6px] relative rounded-[9999px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shrink-0" data-node-id="39:7666" data-name="Overlay+Shadow+OverlayBlur">
+                    <div class="h-[13.333px] relative shrink-0 w-[10.667px]" data-node-id="39:7667" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/4f4283e3-3c9e-483e-976e-cd87bf5245a0.svg">
+                    </div>
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#f1fcf7] text-[11px] tracking-[0.44px] whitespace-nowrap" data-node-id="39:7669">
+                      <p class="leading-[13.2px]">Río Grande, TDF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col gap-[24px] items-start pb-[32px] px-[40px] relative w-full" data-node-id="39:7670" data-name="Hero Content Body">
+                <div class="content-stretch flex items-end justify-between relative w-full responsive-stack-mobile" data-node-id="39:7671" data-name="Container">
+                  <div class="content-stretch flex gap-[20px] items-end relative responsive-stack-mobile" data-node-id="39:7672" data-name="Academy Identity">
+                    <div class="bg-white content-stretch flex items-center justify-center p-[12px] relative rounded-[32px] shrink-0" data-node-id="39:7673" data-name="Background">
+                      <div class="absolute bg-[rgba(255,255,255,0)] bottom-0 h-[112px] left-0 rounded-[32px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] w-[107.39px]" data-node-id="39:7674" data-name="Overlay+Shadow"></div>
+                      <div class="bg-[#173b32] content-stretch flex flex-[1_0_0] flex-col h-full items-center justify-center min-w-px pb-[23.91px] pt-[22.91px] relative" data-node-id="39:7675" data-name="Background">
+                        <div class="content-stretch flex flex-col items-start mb-[-0.01px] relative shrink-0" data-node-id="39:7676" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center leading-[0] relative shrink-0 text-[#ffb86e] text-[24px] tracking-[-0.6px] whitespace-nowrap" data-node-id="39:7677" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                            <p class="leading-[31.2px]">M</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7678" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#80a599] text-[9px] tracking-[0.9px] uppercase whitespace-nowrap" data-node-id="39:7679">
+                            <p class="leading-[9px]">MIRGOR</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="absolute bg-[#d29049] bottom-[-4px] content-stretch flex items-center justify-center right-[-4px] rounded-[9999px] size-[24px]" data-node-id="39:7680" data-name="Background">
+                        <div class="absolute bg-[rgba(255,255,255,0)] bottom-0 right-0 rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)] size-[24px]" data-node-id="39:7681" data-name="Overlay+Shadow"></div>
+                        <div class="relative shrink-0 size-[12.5px]" data-node-id="39:7682" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/313e19ea-2960-44a2-9838-3f1b7d270830.svg">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7684" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start pb-[4px] relative w-full" data-node-id="39:7685" data-name="Margin">
+                        <div class="content-center flex flex-wrap gap-y-[8px] items-center relative w-full" data-node-id="39:7686" data-name="Container">
+                          <div class="bg-[#d9e6dc] content-stretch flex flex-col items-start pb-[1.69px] pt-[1.5px] px-[10px] relative rounded-[9999px]" data-node-id="39:7687" data-name="Background">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#173b32] text-[11px] tracking-[0.275px] uppercase" data-node-id="39:7688">
+                              <p class="leading-[13.2px]">CENTRO DE FORMACIÓN TÉCNICA Y PROFESIONAL HOMOLOGADO</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:7689" data-name="Heading 1">
+                        <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#00251d] text-[40px] tracking-[-0.8px] whitespace-nowrap" data-node-id="39:7690" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                          <p class="leading-[50px]">Fundación Mirgor</p>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7691" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative text-[#556159] text-[15px] tracking-[0.15px]" data-node-id="39:7692">
+                          <p class="leading-[19.5px]">Trayectos Formativos y Certificaciones Técnicas de Alta Especialización</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col gap-[12px] items-start justify-center relative" data-node-id="39:7693" data-name="Direct Contact Pill &amp; Action">
+                    <div class="bg-[#ebf6f1] content-stretch flex gap-[8px] items-center px-[16px] py-[10px] relative rounded-[9999px]" data-node-id="39:7694" data-name="Link">
+                      <div class="relative shrink-0 size-[16.667px]" data-node-id="39:7695" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/46cb787c-5ce5-40b3-98ed-5bd828eb01d6.svg">
+                      </div>
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#173b32] text-[15px] tracking-[0.15px]" data-node-id="39:7697">
+                        <p class="leading-[19.5px]">WhatsApp Sede: +54 9 2964 55-2233</p>
+                      </div>
+                    </div>
+                    <div class="bg-[#173b32] content-stretch flex gap-[8px] items-center px-[20px] py-[10px] relative rounded-[9999px] shrink-0" data-node-id="39:7698" data-name="Link">
+                      <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_-0.5px_0.5px_0] rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)]" data-node-id="39:7699" data-name="Link:shadow"></div>
+                      <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7700" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[15px] text-white tracking-[0.15px] whitespace-nowrap" data-node-id="39:7701">
+                          <p class="leading-[19.5px]">Explorar Talleres</p>
+                        </div>
+                      </div>
+                      <div class="h-[15px] relative shrink-0 w-[10.5px]" data-node-id="39:7702" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/b95f3ead-ed6b-4599-bd42-ae8e6d165c78.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gap-x-[24px] gap-y-[24px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[_210.84px] pt-[8px] relative w-full" data-node-id="39:7704" data-name="Description &amp; Mission">
+                  <div class="col-[1/span_2] content-stretch flex flex-col gap-[12px] items-start justify-self-stretch relative row-1 self-start" data-node-id="39:7705" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7706" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[18px] w-full" data-node-id="39:7707">
+                        <p class="leading-[29.25px]">Capacitaciones orientadas a la inserción laboral calificada en la industria electrónica y automotriz de vanguardia en Río Grande, Tierra del Fuego. Formación con tecnología de montaje superficial (SMD), automatización industrial, control estricto de calidad según normas IPC, programación de PLC y gestión logística fueguina bajo el régimen industrial de la Ley 19.640.</p>
+                      </div>
+                    </div>
+                    <div class="relative w-full flex flex-col items-start gap-[8px]" data-node-id="39:7708" data-name="Container">
+                      <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:7709" data-name="Container">
+                        <div class="relative shrink-0 size-[13.5px]" data-node-id="39:7710" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/38c68e76-0f24-4760-ac5c-fe2eca581b3c.svg">
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7712" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative text-[#141e1b] text-[14px]" data-node-id="39:7713">
+                            <p class="leading-[20.3px]">Planta Modelo / Centro Tecnológico Mirgor</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7714" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#c1c8c4] text-[14px] whitespace-nowrap" data-node-id="39:7715">
+                          <p class="leading-[20.3px]">•</p>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:7716" data-name="Container">
+                        <div class="h-[15px] relative shrink-0 w-[13.5px]" data-node-id="39:7717" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/514ee012-8a85-40b9-909f-07ac7d6c4496.svg">
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7719" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[14px]" data-node-id="39:7720">
+                            <p class="leading-[20.3px]">Parque Industrial Río Grande (Av. Islas Malvinas y Ruta Nac. 3)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#ebf6f1] col-3 content-stretch flex flex-col gap-[10px] items-start justify-center justify-self-stretch pb-[33.93px] pt-[33.94px] px-[16px] relative rounded-[32px] row-1 self-start" data-node-id="39:7721" data-name="Validation Badges Box">
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7722" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#556159] text-[11px] tracking-[0.55px] uppercase w-full" data-node-id="39:7723">
+                        <p class="leading-[13.2px]">CONVENIOS ACADÉMICOS &amp; AVALES</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[8px] items-center relative w-full" data-node-id="39:7724" data-name="Container">
+                      <div class="bg-[#dae5e0] content-stretch flex h-[32px] items-center justify-center relative rounded-[9999px] shrink-0 w-[29.66px]" data-node-id="39:7725" data-name="Background">
+                        <div class="h-[13.5px] relative shrink-0 w-[16.5px]" data-node-id="39:7726" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/f0a83157-5c4b-4a5b-a03b-31662ed51540.svg">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7728" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7729" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#141e1b] text-[13px] tracking-[0.26px]" data-node-id="39:7730">
+                            <p class="leading-[16.9px]">UTN Facultad Regional Río Grande</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7731" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[12px]" data-node-id="39:7732">
+                            <p class="leading-[18px]">Homologación y certificación conjunta de competencias</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[8px] items-center pt-[4px] relative w-full" data-node-id="39:7733" data-name="Container">
+                      <div class="bg-[#dae5e0] content-stretch flex h-[32px] items-center justify-center relative rounded-[9999px] shrink-0 w-[30.77px]" data-node-id="39:7734" data-name="Background">
+                        <div class="relative shrink-0 size-[15px]" data-node-id="39:7735" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/88eaf888-356b-4a9e-8677-524498c1588d.svg">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7737" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7738" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#141e1b] text-[13px] tracking-[0.26px]" data-node-id="39:7739">
+                            <p class="leading-[16.9px]">Ministerio de Educación TDF</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7740" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[12px]" data-node-id="39:7741">
+                            <p class="leading-[18px]">Reconocimiento para trayectos técnico- profesionales</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex gap-[16px] items-start justify-center pt-[12px] relative w-full responsive-flex-4" data-node-id="39:7742" data-name="Impact Metrics Grid">
+                  <div class="bg-[#e5f0eb] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px p-[16px] relative" data-node-id="39:7743" data-name="Background">
+                    <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:7744" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[32px] tracking-[-0.64px] w-full" data-node-id="39:7745" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[32px]">+1.200</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[4px] relative shrink-0 w-full" data-node-id="39:7746" data-name="Margin">
+                      <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:7747" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#556159] text-[13px] tracking-[0.26px] w-full" data-node-id="39:7748">
+                          <p class="leading-[16.9px]">Egresados certificados</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#e5f0eb] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px p-[16px] relative" data-node-id="39:7749" data-name="Background">
+                    <div class="[word-break:break-word] content-stretch flex gap-[4px] items-baseline leading-[0] relative shrink-0 text-[#d29049] w-full whitespace-nowrap" data-node-id="39:7750" data-name="Paragraph">
+                      <div class="flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center relative shrink-0 text-[32px] tracking-[-0.64px]" data-node-id="39:7751" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[32px]">95%</p>
+                      </div>
+                      <div class="flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center relative shrink-0 text-[12px]" data-node-id="39:7752">
+                        <p class="leading-[18px]">efectivo</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[4px] relative w-full" data-node-id="39:7753" data-name="Margin">
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7754" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative text-[#556159] text-[13px] tracking-[0.26px] w-full" data-node-id="39:7755">
+                          <p class="leading-[16.9px]">Inserción en plantas fueguinas</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#e5f0eb] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px p-[16px] relative" data-node-id="39:7756" data-name="Background">
+                    <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:7757" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[32px] tracking-[-0.64px] w-full" data-node-id="39:7758" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[32px]">100%</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[4px] relative w-full" data-node-id="39:7759" data-name="Margin">
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7760" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative text-[#556159] text-[13px] tracking-[0.26px] w-full" data-node-id="39:7761">
+                          <p class="leading-[16.9px]">Prácticas con maquinaria real</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#e5f0eb] content-stretch flex flex-[1_0_0] flex-col items-start min-w-px p-[16px] relative" data-node-id="39:7762" data-name="Background">
+                    <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:7763" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[32px] tracking-[-0.64px] w-full" data-node-id="39:7764" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[32px]">IPC-A-610</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[4px] relative w-full" data-node-id="39:7765" data-name="Margin">
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7766" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative text-[#556159] text-[13px] tracking-[0.26px] w-full" data-node-id="39:7767">
+                          <p class="leading-[16.9px]">Estándar internacional fabril</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-stretch flex flex-col gap-[16px] items-start relative w-full" data-node-id="39:7768" data-name="Section - 4. Barra de Filtros y Búsqueda interna">
+              <div class="content-stretch flex items-center justify-between relative w-full responsive-stack-mobile" data-node-id="39:7769" data-name="Container">
+                <div class="relative flex flex-col items-start w-full gap-[8px]" data-node-id="39:7770" data-name="Container">
+                  <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7771" data-name="Heading 2">
+                    <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[24px] tracking-[-0.6px]" data-node-id="39:7772" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                      <p class="leading-[31.2px]">Cursos y Trayectos Formativos Disponibles</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7773" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[16px]" data-node-id="39:7774">
+                      <p class="leading-[24px]">Inscripciones abiertas para la convocatoria bimestral en Río Grande</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-[#d9e6dc] content-stretch flex gap-[8px] items-center px-[14px] py-[6px] relative rounded-[9999px]" data-node-id="39:7775" data-name="Background">
+                  <div class="bg-[#d29049] relative rounded-[9999px] shrink-0 size-[8px]" data-node-id="39:7776" data-name="Background"></div>
+                  <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7777" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#173b32] text-[13px] tracking-[0.26px]" data-node-id="39:7778">
+                      <p class="leading-[16.9px]">Cohortes con inicio en Noviembre 2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex gap-[8px] items-center p-[8px] relative rounded-[9999px] w-full responsive-stack-mobile" data-node-id="39:7779" data-name="Search Input Bar">
+                <div class="content-stretch flex flex-[1_0_0] gap-[12px] items-center min-w-px px-[16px] py-[8px] relative" data-node-id="39:7780" data-name="Container">
+                  <div class="relative shrink-0 size-[16.5px]" data-node-id="39:7781" data-name="Container">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/50fe6ba9-cdcc-44dc-8eae-35642f02d3f0.svg">
+                  </div>
+                  <div class="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pb-[2px] pt-px relative" data-node-id="39:7783" data-name="Input">
+                    <div class="content-stretch flex flex-col items-start overflow-clip relative w-full" data-node-id="39:7784" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#717975] text-[16px] w-full" data-node-id="39:7785">
+                        <p class="leading-[normal]">Buscar en los cursos de Fundación Mirgor (ej: PLC, SMD, soldadura, IPC)...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-[#ffb86e] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex items-center justify-center px-[24px] py-[10px] relative rounded-[9999px] shrink-0" data-node-id="39:7786" data-name="Button">
+                  <div class="content-stretch flex flex-col items-center relative shrink-0" data-node-id="39:7787" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#131e18] text-[15px] text-center tracking-[0.15px] whitespace-nowrap" data-node-id="39:7788">
+                      <p class="leading-[19.5px]">Filtrar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-center flex flex-wrap gap-[8px] items-center pt-[4px] relative w-full responsive-stack-mobile" data-node-id="39:7789" data-name="Category &amp; Modality Filter Tabs">
+                <div class="bg-[#173b32] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center px-[16px] py-[8px] relative rounded-[9999px] shrink-0" data-node-id="39:7790" data-name="Button">
+                  <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[13px] text-center text-white tracking-[0.26px]" data-node-id="39:7791">
+                    <p class="leading-[16.9px]">Todos los cursos (4)</p>
+                  </div>
+                </div>
+                <div class="bg-[#e5f0eb] content-stretch flex flex-col items-center justify-center px-[16px] py-[8px] relative rounded-[9999px] shrink-0" data-node-id="39:7792" data-name="Button">
+                  <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#414845] text-[13px] text-center tracking-[0.26px]" data-node-id="39:7793">
+                    <p class="leading-[16.9px]">Industria 4.0 &amp; PLC</p>
+                  </div>
+                </div>
+                <div class="bg-[#e5f0eb] content-stretch flex flex-col items-center justify-center px-[16px] py-[8px] relative rounded-[9999px] shrink-0" data-node-id="39:7794" data-name="Button">
+                  <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative text-[#414845] text-[13px] text-center tracking-[0.26px]" data-node-id="39:7795">
+                    <p class="leading-[16.9px]">Manufactura Electrónica &amp; SMD</p>
+                  </div>
+                </div>
+                <div class="bg-[#e5f0eb] content-stretch flex flex-col items-center justify-center px-[16px] py-[8px] relative rounded-[9999px] shrink-0" data-node-id="39:7796" data-name="Button">
+                  <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#414845] text-[13px] text-center tracking-[0.26px]" data-node-id="39:7797">
+                    <p class="leading-[16.9px]">Control de Calidad IPC</p>
+                  </div>
+                </div>
+                <div class="bg-[#e5f0eb] content-stretch flex flex-col items-center justify-center px-[16px] py-[8px] relative rounded-[9999px] shrink-0" data-node-id="39:7798" data-name="Button">
+                  <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#414845] text-[13px] text-center tracking-[0.26px] whitespace-nowrap" data-node-id="39:7799">
+                    <p class="leading-[16.9px]">Logística y Planta</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col h-[20px] items-start px-[4px] relative shrink-0 w-[9px]" data-node-id="39:7800" data-name="Margin">
+                  <div class="bg-[#c1c8c4] h-[20px] relative shrink-0 w-px" data-node-id="39:7801" data-name="Vertical Divider"></div>
+                </div>
+                <div class="content-stretch flex flex-[1_0_0] flex-col items-end relative" data-node-id="39:7802" data-name="Margin">
+                  <div class="content-stretch flex gap-[6px] items-center relative" data-node-id="39:7803" data-name="Container">
+                    <div class="relative shrink-0 size-[12px]" data-node-id="39:7804" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/80fa211d-9254-44db-a6ca-eb19fa5d735e.svg">
+                    </div>
+                    <select class="real-select real-select--sort-inline" data-node-id="39:7806" data-name="Container" aria-label="Filtrar por modalidad">
+                      <option value="Modalidad: Presencial y Semipresencial" selected>Modalidad: Presencial y Semipresencial</option>
+                      <option value="Modalidad: Presencial en Planta">Modalidad: Presencial en Planta</option>
+                      <option value="Modalidad: Semipresencial / Híbrido">Modalidad: Semipresencial / Híbrido</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gap-x-[24px] gap-y-[24px] grid grid-cols-[repeat(2,minmax(0,1fr))] relative w-full" data-node-id="39:7808" data-name="Section - 5. Grilla de Cursos de la Fundación Mirgor">
+              <div class="bg-white col-1 row-1 content-stretch flex flex-col items-start justify-between justify-self-stretch overflow-clip relative rounded-[32px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] h-full" data-node-id="39:7809" data-name="Article - Curso 1 (Destacado)">
+                <div class="content-stretch flex flex-col isolate items-start relative w-full" data-node-id="39:7810" data-name="Container">
+                  <a class="bg-[#dfebe6] content-stretch cursor-pointer flex flex-col items-start justify-center overflow-clip relative w-full z-[2]" data-node-id="39:7811" data-name="Card Visual Header">
+                    <div class="h-[339.75px] relative shrink-0 w-full" data-node-id="39:7812" data-name="Image">
+                      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img alt="" class="absolute h-full left-[-1.61%] max-w-none top-0 w-[103.23%]" src="assets/87fb63e6-a6d4-49bc-868e-1099ee9d98e2.png">
+                      </div>
+                    </div>
+                    <div class="absolute content-stretch flex flex-wrap gap-[8px] items-start left-[12px] top-[12px] max-w-[calc(100%-56px)] responsive-wrap-mobile" data-node-id="39:7813" data-name="Badges Over Image">
+                      <div class="backdrop-blur-[8px] bg-[rgba(255,255,255,0.95)] content-stretch flex gap-[4px] items-center px-[12px] py-[4px] relative rounded-[9999px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="39:7814" data-name="Background+Shadow+OverlayBlur">
+                        <div class="bg-[#173b32] relative rounded-[9999px] shrink-0 size-[6px]" data-node-id="39:7815" data-name="Background"></div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#173b32] text-[11px] text-left tracking-[0.55px] uppercase" data-node-id="39:7816">
+                          <p class="leading-[13.2px]">PRESENCIAL EN PLANTA MODELO</p>
+                        </div>
+                      </div>
+                      <div class="bg-[#ffdcbd] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-start px-[10px] py-[4px] relative rounded-[9999px] self-stretch shrink-0" data-node-id="39:7817" data-name="Background+Shadow">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#331a00] text-[11px] text-left tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:7818">
+                          <p class="leading-[13.2px]">DESTACADO</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-[12px] content-stretch flex flex-col items-start pt-[3px] right-[12px]" data-node-id="39:7819" data-name="Container">
+                      <div class="backdrop-blur-[12px] bg-[rgba(23,59,50,0.9)] content-stretch flex items-start px-[12px] py-[3.5px] relative rounded-[9999px] shrink-0" data-node-id="39:7820" data-name="Overlay+OverlayBlur">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[11px] text-left text-white tracking-[0.44px]" data-node-id="39:7821">
+                          <p class="leading-[13.2px]">6 Semanas • Mar y Jue</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="relative w-full z-[1] flex flex-col items-start p-[20px] gap-[10px]" data-node-id="39:7822" data-name="Card Body">
+                    <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:7823" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7824" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#d29049] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:7825">
+                          <p class="leading-[13.2px]">MANUFACTURA ELECTRÓNICA &amp; SMD</p>
+                        </div>
+                      </div>
+                      <div class="relative shrink-0 flex items-center gap-[8px]" data-node-id="39:7826" data-name="Container">
+                        <div class="h-[12.667px] w-[13.333px] relative shrink-0" data-node-id="39:7827" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/81f5cd36-9e59-4d46-8609-a02d42eb17eb.svg">
+                        </div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] text-[#556159] text-[13px] whitespace-nowrap relative" data-node-id="39:7829">
+                          <p class="leading-[19.5px]">4.9 (142 reseñas)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pb-[0.75px] relative w-full" data-node-id="39:7830" data-name="Heading 3">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[20px] tracking-[-0.2px]" data-node-id="39:7831" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[27.5px]">Introducción a Procesos Industriales y Manufactura Electrónica</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start overflow-clip relative w-full" data-node-id="39:7832" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[14px]" data-node-id="39:7833">
+                        <p class="leading-[20.3px]">Entrenamiento intensivo en líneas de producción continua. Principios operativos de inserción de componentes SMD, hornos de reflujo y pautas operativas del régimen…</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[12px] items-center pt-[8px] relative w-full" data-node-id="39:7834" data-name="Instructor Row">
+                      <div class="max-w-[556px] relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:7835" data-name="AB6AXuDEe8ad9-7rh-gGMuPZk-vSJnoZ-q5GyJvoSLCllsr258cL210x4xspTsLdDNhs4GmeHkhvnYzhV_DbW0bfKtLpu71lvgaZDv8NS8ieDmrxkUgzQj6ejwt5CvLyBHrY7Fmu1C41sEEvcK-gYUXmUL6xLAneGwirXVNK26JMe2xm_wtAYnbB6dbjOsG6s82hPfKz27v--Lbf2aZCb-zVkAyz3cbqFQOvM4EUpRJXLNc">
+                        <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[9999px]">
+                          <img alt="" class="absolute h-[179.02%] left-0 max-w-none top-[-39.51%] w-full" src="assets/11e34733-3f7a-4c08-8746-be6e456251b1.png">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7836" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:7837" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#141e1b] text-[13px] tracking-[0.26px]" data-node-id="39:7838">
+                            <p class="leading-[16.9px]">Ing. Roberto Daneri</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7839" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#556159] text-[12px]" data-node-id="39:7840">
+                            <p class="leading-[18px]">Especialista en Automatización &amp; Calidad</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[8px] relative w-full" data-node-id="39:7841" data-name="Certificate Tag &amp; Schedule:margin">
+                      <div class="bg-[#e5f0eb] content-stretch flex flex-col gap-[6px] items-start p-[12px] relative w-full" data-node-id="39:7842" data-name="Certificate Tag &amp; Schedule">
+                        <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:7843" data-name="Container">
+                          <div class="h-[14px] relative shrink-0 w-[14.667px]" data-node-id="39:7844" data-name="Container">
+                            <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/c9517656-9fad-4c42-9f40-3b2bb7812b38.svg">
+                          </div>
+                          <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7846" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#141e1b] text-[11px] tracking-[0.44px]" data-node-id="39:7847">
+                              <p class="leading-[13.2px]">Certificación Oficial IPC-A-610 avalada por UTN FRRG</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:7848" data-name="Container">
+                          <div class="relative shrink-0 size-[12.5px]" data-node-id="39:7849" data-name="Container">
+                            <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/8e871923-3a8d-433d-9b81-f95d60981de8.svg">
+                          </div>
+                          <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7851" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[12px]" data-node-id="39:7852">
+                              <p class="leading-[18px]">Martes y Jueves 18:00 a 20:30 hs (Planta Mirgor Malvinas)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex items-center justify-between pb-[24px] pt-[8px] px-[24px] relative w-full responsive-stack-mobile" data-node-id="39:7853" data-name="Card Footer">
+                  <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7854" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start mb-[-0.1px] relative shrink-0 w-full" data-node-id="39:7855" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#556159] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:7856">
+                        <p class="leading-[13.2px]">INVERSIÓN TOTAL</p>
+                      </div>
+                    </div>
+                    <div class="[word-break:break-word] content-stretch flex gap-[4px] items-baseline leading-[0] mb-[-0.1px] relative shrink-0 w-full whitespace-nowrap" data-node-id="39:7857" data-name="Paragraph">
+                      <div class="flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center relative shrink-0 text-[#173b32] text-[28px] tracking-[-0.56px]" data-node-id="39:7858" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[30.8px]">$ 32.000</p>
+                      </div>
+                      <div class="flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center relative shrink-0 text-[#556159] text-[11px]" data-node-id="39:7859">
+                        <p class="leading-[16.5px]">ARS</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7860" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#d29049] text-[12px]" data-node-id="39:7861">
+                        <p class="leading-[18px]">3 cuotas sin interés de $ 10.666 ARS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="bg-[#173b32] content-stretch flex gap-[6px] items-center px-[20px] py-[10px] relative rounded-[9999px] shrink-0 cursor-pointer self-center" data-node-id="39:7862" data-name="Link" href="detalle-curso.html">
+                    <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_0_0.5px_0] rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" data-node-id="39:7863" data-name="Link:shadow"></div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7864" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[15px] text-left text-white tracking-[0.15px] whitespace-nowrap" data-node-id="39:7865">
+                        <p class="leading-[19.5px]">Inscribirse</p>
+                      </div>
+                    </div>
+                    <div class="relative shrink-0 size-[12px]" data-node-id="39:7866" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/28c171e3-1c77-418d-a919-acbd6818dc69.svg">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white col-2 row-1 content-stretch flex flex-col items-start justify-between justify-self-stretch overflow-clip relative rounded-[32px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] h-full" data-node-id="39:7868" data-name="Article - Curso 2">
+                <div class="content-stretch flex flex-col isolate items-start relative w-full" data-node-id="39:7869" data-name="Container">
+                  <div class="bg-[#dfebe6] content-stretch flex flex-col items-start justify-center overflow-clip relative w-full z-[2]" data-node-id="39:7870" data-name="Card Visual Header">
+                    <div class="h-[339.75px] relative shrink-0 w-full" data-node-id="39:7871" data-name="Image">
+                      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img alt="" class="absolute h-full left-[-1.61%] max-w-none top-0 w-[103.23%]" src="assets/ca0694b3-6d31-4e0b-b0a2-ffce7ca9cb09.png">
+                      </div>
+                    </div>
+                    <div class="absolute content-stretch flex flex-wrap gap-[8px] items-start left-[12px] top-[12px] max-w-[calc(100%-56px)] responsive-wrap-mobile" data-node-id="39:7872" data-name="Badges Over Image">
+                      <div class="backdrop-blur-[8px] bg-[rgba(255,255,255,0.95)] content-stretch flex gap-[4px] items-center px-[12px] py-[4px] relative rounded-[9999px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="39:7873" data-name="Background+Shadow+OverlayBlur">
+                        <div class="bg-[#173b32] relative rounded-[9999px] shrink-0 size-[6px]" data-node-id="39:7874" data-name="Background"></div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#173b32] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:7875">
+                          <p class="leading-[13.2px]">LAB. DE ROBÓTICA MIRGOR</p>
+                        </div>
+                      </div>
+                      <div class="bg-[#ffdad6] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-start px-[10px] py-[4px] relative rounded-[9999px] self-stretch shrink-0" data-node-id="39:7876" data-name="Background+Shadow">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#93000a] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:7877">
+                          <p class="leading-[13.2px]">ÚLTIMOS 4 CUPOS</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-[12px] content-stretch flex flex-col items-start pt-[3px] right-[12px]" data-node-id="39:7878" data-name="Container">
+                      <div class="backdrop-blur-[12px] bg-[rgba(23,59,50,0.9)] content-stretch flex items-start px-[12px] py-[3.5px] relative rounded-[9999px] shrink-0" data-node-id="39:7879" data-name="Overlay+OverlayBlur">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[11px] text-white tracking-[0.44px]" data-node-id="39:7880">
+                          <p class="leading-[13.2px]">6 Semanas Intensivas</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative w-full z-[1] flex flex-col items-start p-[20px] gap-[10px]" data-node-id="39:7881" data-name="Card Body">
+                    <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:7882" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7883" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#d29049] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:7884">
+                          <p class="leading-[13.2px]">INDUSTRIA 4.0 &amp; PLC</p>
+                        </div>
+                      </div>
+                      <div class="relative shrink-0 flex items-center gap-[8px]" data-node-id="39:7885" data-name="Container">
+                        <div class="h-[12.667px] w-[13.333px] relative shrink-0" data-node-id="39:7886" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/81f5cd36-9e59-4d46-8609-a02d42eb17eb.svg">
+                        </div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] text-[#556159] text-[13px] whitespace-nowrap relative" data-node-id="39:7888">
+                          <p class="leading-[19.5px]">5.0 (64 egresados)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pb-[0.75px] relative w-full" data-node-id="39:7889" data-name="Heading 3">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[20px] tracking-[-0.2px]" data-node-id="39:7890" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[27.5px]">Automatización Industrial y Programación Básica de PLC Siemens S7</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start overflow-clip relative w-full" data-node-id="39:7891" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[14px]" data-node-id="39:7892">
+                        <p class="leading-[20.3px]">Lógica de escalera (Ladder), configuración de módulos de entrada/salida y diagnóstico de fallas en celdas robotizadas aplicadas a la producción fueguina.</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[12px] items-center pt-[8px] relative w-full" data-node-id="39:7893" data-name="Instructor Row">
+                      <div class="max-w-[556px] relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:7894" data-name="AB6AXuDNomwNSQ_Wy0vj5JobUgH60gTO2WKkDu97VsZvuHcxt2eocGW7LQxS-3tnElAZ7nWz3TyyEmmNEvXK_AssJVtlb5IMTMiKegk2MeYlzEAf-0MSK6jRlUfsiXTjdBRYPYuO9BhTcvZwnY_EBBhwot3x1XhIjldEhQZw1b7DetRP0rqlme8TBN5vIi_qbBJdFIoTLNBkLJDell7wfvDVPHkeaoaDTiMZ8yH1Uhk0pp0">
+                        <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[9999px]">
+                          <img alt="" class="absolute h-full left-[-41.76%] max-w-none top-0 w-[183.51%]" src="assets/6abfc6dd-9352-4cac-809d-3ed52bbfe8c1.png">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7895" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7896" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#141e1b] text-[13px] tracking-[0.26px]" data-node-id="39:7897">
+                            <p class="leading-[16.9px]">Téc. Sup. Esteban Morales</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7898" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#556159] text-[12px]" data-node-id="39:7899">
+                            <p class="leading-[18px]">Líder de Automatización en Líneas Continuas</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[8px] relative w-full" data-node-id="39:7900" data-name="Cohort Capacity Progress Indicator:margin">
+                      <div class="bg-[#e5f0eb] content-stretch flex flex-col gap-[7.99px] items-start p-[12px] relative w-full" data-node-id="39:7901" data-name="Cohort Capacity Progress Indicator">
+                        <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:7902" data-name="Container">
+                          <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7903" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#141e1b] text-[11px] tracking-[0.44px]" data-node-id="39:7904">
+                              <p class="leading-[13.2px]">Vacantes: 11 inscriptos de 15</p>
+                            </div>
+                          </div>
+                          <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7905" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#d29049] text-[11px] tracking-[0.44px]" data-node-id="39:7906">
+                              <p class="leading-[13.2px]">4 vacantes restantes</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bg-[#dae5e0] h-[6px] overflow-clip relative rounded-[9999px] shrink-0 w-full" data-node-id="39:7907" data-name="Background">
+                          <div class="absolute bg-[#d29049] inset-[0_27%_0_0] rounded-[9999px]" data-node-id="39:7908" data-name="Background"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex items-center justify-between pb-[24px] pt-[8px] px-[24px] relative w-full responsive-stack-mobile" data-node-id="39:7909" data-name="Card Footer">
+                  <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7910" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start mb-[-0.1px] relative shrink-0 w-full" data-node-id="39:7911" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#556159] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:7912">
+                        <p class="leading-[13.2px]">INVERSIÓN TOTAL</p>
+                      </div>
+                    </div>
+                    <div class="[word-break:break-word] content-stretch flex gap-[4px] items-baseline leading-[0] mb-[-0.1px] relative shrink-0 w-full whitespace-nowrap" data-node-id="39:7913" data-name="Paragraph">
+                      <div class="flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center relative shrink-0 text-[#173b32] text-[28px] tracking-[-0.56px]" data-node-id="39:7914" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[30.8px]">$ 36.000</p>
+                      </div>
+                      <div class="flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center relative shrink-0 text-[#556159] text-[11px]" data-node-id="39:7915">
+                        <p class="leading-[16.5px]">ARS</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7916" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#d29049] text-[12px]" data-node-id="39:7917">
+                        <p class="leading-[18px]">3 cuotas de $ 12.000 ARS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="bg-[#173b32] content-stretch flex gap-[6px] items-center px-[20px] py-[10px] relative rounded-[9999px] shrink-0 cursor-pointer self-center" data-node-id="39:7918" data-name="Link" href="detalle-curso.html">
+                    <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_0_0.5px_0] rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" data-node-id="39:7919" data-name="Link:shadow"></div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7920" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[15px] text-white tracking-[0.15px] whitespace-nowrap" data-node-id="39:7921">
+                        <p class="leading-[19.5px]">Inscribirse</p>
+                      </div>
+                    </div>
+                    <div class="relative shrink-0 size-[12px]" data-node-id="39:7922" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/28c171e3-1c77-418d-a919-acbd6818dc69.svg">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white col-1 row-2 content-stretch flex flex-col items-start justify-between justify-self-stretch overflow-clip relative rounded-[32px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] h-full" data-node-id="39:7924" data-name="Article - Curso 3">
+                <div class="content-stretch flex flex-col isolate items-start relative w-full" data-node-id="39:7925" data-name="Container">
+                  <div class="bg-[#dfebe6] content-stretch flex flex-col items-start justify-center overflow-clip relative w-full z-[2]" data-node-id="39:7926" data-name="Card Visual Header">
+                    <div class="h-[339.75px] relative shrink-0 w-full" data-node-id="39:7927" data-name="Image">
+                      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img alt="" class="absolute h-full left-[-1.61%] max-w-none top-0 w-[103.23%]" src="assets/8df6380f-b1f1-455e-92d2-1317738cc0a4.png">
+                      </div>
+                    </div>
+                    <div class="absolute content-stretch flex flex-wrap gap-[8px] items-start left-[12px] top-[12px] max-w-[calc(100%-56px)] responsive-stack-mobile" data-node-id="39:7928" data-name="Badges Over Image">
+                      <div class="backdrop-blur-[8px] bg-[rgba(255,255,255,0.95)] content-stretch flex gap-[4px] items-center px-[12px] py-[4px] relative rounded-[9999px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="39:7929" data-name="Background+Shadow+OverlayBlur">
+                        <div class="bg-[#d29049] relative rounded-[9999px] shrink-0 size-[6px]" data-node-id="39:7930" data-name="Background"></div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#173b32] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:7931">
+                          <p class="leading-[13.2px]">TEÓRICO VIRTUAL + 2 PRÁCTICAS EN PLANTA</p>
+                        </div>
+                      </div>
+                      <div class="bg-[#d9e6dc] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-start px-[10px] py-[4px] relative rounded-[9999px] self-stretch shrink-0" data-node-id="39:7932" data-name="Background+Shadow">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:7933">
+                          <p class="leading-[13.2px]">BECA 100% TDF</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-[12px] content-stretch flex flex-col items-start pt-[3px] right-[12px]" data-node-id="39:7934" data-name="Container">
+                      <div class="backdrop-blur-[12px] bg-[rgba(23,59,50,0.9)] content-stretch flex items-start px-[12px] py-[3.5px] relative rounded-[9999px] shrink-0" data-node-id="39:7935" data-name="Overlay+OverlayBlur">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[11px] text-white tracking-[0.44px] whitespace-nowrap" data-node-id="39:7936">
+                          <p class="leading-[13.2px]">Formato Mixto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative w-full z-[1] flex flex-col items-start p-[20px] gap-[10px]" data-node-id="39:7937" data-name="Card Body">
+                    <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:7938" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7939" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#d29049] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:7940">
+                          <p class="leading-[13.2px]">CONTROL DE CALIDAD IPC</p>
+                        </div>
+                      </div>
+                      <div class="relative shrink-0 flex items-center gap-[8px]" data-node-id="39:7941" data-name="Container">
+                        <div class="h-[12.667px] w-[13.333px] relative shrink-0" data-node-id="39:7942" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/81f5cd36-9e59-4d46-8609-a02d42eb17eb.svg">
+                        </div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] text-[#556159] text-[13px] relative" data-node-id="39:7944">
+                          <p class="leading-[19.5px]">4.8 (112 egresados)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7945" data-name="Heading 3">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[20px] tracking-[-0.2px]" data-node-id="39:7946" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[27.5px]">Normas de Calidad IPC-A-610 y Ensamble Superficial SMD</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start overflow-clip relative w-full" data-node-id="39:7947" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[14px]" data-node-id="39:7948">
+                        <p class="leading-[20.3px]">Criterios de aceptabilidad de ensambles electrónicos. Detección de fallas de soldadura, desalineación de componentes y protocolos de auditoría de línea.</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[12px] items-center pt-[8px] relative w-full" data-node-id="39:7949" data-name="Instructor Row">
+                      <div class="max-w-[556px] relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:7950" data-name="AB6AXuDxGbLQ8Q_LyY7WZ8NP7mjZr9O_qKli8227FPEEfVBDNsjPPOXase_BY1ex99oUPrfnC9OMfu43_L56mcI8JfmDUVmp4ILM4Nya1_j9Wn6B6UCPo55I1AcAaNwJIqv9v51lTIcTLWAs5-wxlyrYQV6D6_D02Bq3ENiXg7E5U21DHwjhM_dMi3ZauLKLzc9v8MfDKGZbr6TcyegLa_ewZ4k4wcIk-40pnFu8ObjbKYM">
+                        <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[9999px]">
+                          <img alt="" class="absolute h-full left-[-39.51%] max-w-none top-0 w-[179.02%]" src="assets/727b2f7f-ec38-4f9b-a909-0c31fb346121.png">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7951" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:7952" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#141e1b] text-[13px] tracking-[0.26px]" data-node-id="39:7953">
+                            <p class="leading-[16.9px]">Ing. Marisa Ceballos</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7954" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#556159] text-[12px]" data-node-id="39:7955">
+                            <p class="leading-[18px]">Supervisora de Calidad en Planta Río Grande</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[8px] relative w-full" data-node-id="39:7956" data-name="Certificate Tag &amp; Schedule:margin">
+                      <div class="bg-[#e5f0eb] content-stretch flex flex-col gap-[6px] items-start p-[12px] relative w-full" data-node-id="39:7957" data-name="Certificate Tag &amp; Schedule">
+                        <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:7958" data-name="Container">
+                          <div class="h-[13.333px] relative shrink-0 w-[6.667px]" data-node-id="39:7959" data-name="Container">
+                            <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/bbf88d2c-1f2f-47bb-a181-9eaf08208dbf.svg">
+                          </div>
+                          <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7961" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#141e1b] text-[11px] tracking-[0.44px]" data-node-id="39:7962">
+                              <p class="leading-[13.2px]">Certificado de Inspector IPC-A-610 Nivel Operativo</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:7963" data-name="Container">
+                          <div class="h-[10px] relative shrink-0 w-[12.5px]" data-node-id="39:7964" data-name="Container">
+                            <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/73895ed7-8ebb-4275-9e44-4b25b8f2f6ad.svg">
+                          </div>
+                          <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7966" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#d29049] text-[12px]" data-node-id="39:7967">
+                              <p class="leading-[18px]">100% bonificado para postulados residentes en TDF</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex items-center justify-between pb-[24px] pt-[8px] px-[24px] relative w-full responsive-stack-mobile" data-node-id="39:7968" data-name="Card Footer">
+                  <div class="content-stretch flex flex-col items-start relative" data-node-id="39:7969" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start mb-[-0.1px] relative shrink-0 w-full" data-node-id="39:7970" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#556159] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:7971">
+                        <p class="leading-[13.2px]">INVERSIÓN</p>
+                      </div>
+                    </div>
+                    <div class="[word-break:break-word] content-stretch flex gap-[4px] items-baseline leading-[0] mb-[-0.1px] relative shrink-0 w-full whitespace-nowrap" data-node-id="39:7972" data-name="Paragraph">
+                      <div class="flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center relative shrink-0 text-[#173b32] text-[28px] tracking-[-0.56px]" data-node-id="39:7973" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[30.8px]">$ 28.000</p>
+                      </div>
+                      <div class="flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center relative shrink-0 text-[#556159] text-[11px]" data-node-id="39:7974">
+                        <p class="leading-[16.5px]">ARS</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:7975" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#173b32] text-[12px]" data-node-id="39:7976">
+                        <p class="leading-[18px]">O opción beca completa con DNI TDF</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="bg-[#173b32] content-stretch flex gap-[6px] items-center px-[20px] py-[10px] relative rounded-[9999px] shrink-0 cursor-pointer self-center" data-node-id="39:7977" data-name="Link" href="detalle-curso.html">
+                    <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_0_0.5px_0] rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" data-node-id="39:7978" data-name="Link:shadow"></div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7979" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[15px] text-white tracking-[0.15px] whitespace-nowrap" data-node-id="39:7980">
+                        <p class="leading-[19.5px]">Inscribirse</p>
+                      </div>
+                    </div>
+                    <div class="relative shrink-0 size-[12px]" data-node-id="39:7981" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/28c171e3-1c77-418d-a919-acbd6818dc69.svg">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white col-2 row-2 content-stretch flex flex-col items-start justify-between justify-self-stretch overflow-clip relative rounded-[32px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] h-full" data-node-id="39:7983" data-name="Article - Curso 4">
+                <div class="content-stretch flex flex-col isolate items-start relative w-full" data-node-id="39:7984" data-name="Container">
+                  <div class="bg-[#dfebe6] content-stretch flex flex-col items-start justify-center overflow-clip relative w-full z-[2]" data-node-id="39:7985" data-name="Card Visual Header">
+                    <div class="h-[339.75px] relative shrink-0 w-full" data-node-id="39:7986" data-name="Image">
+                      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img alt="" class="absolute h-full left-[-1.61%] max-w-none top-0 w-[103.23%]" src="assets/f1c30a8a-35d5-4d81-ab8c-1cff514b4a06.png">
+                      </div>
+                    </div>
+                    <div class="absolute content-stretch flex flex-wrap gap-y-[8px] items-start left-[12px] top-[12px] max-w-[calc(100%-56px)]" data-node-id="39:7987" data-name="Badges Over Image">
+                      <div class="backdrop-blur-[8px] bg-[rgba(255,255,255,0.95)] content-stretch flex gap-[4px] items-center px-[12px] py-[4px] relative rounded-[9999px] self-stretch shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]" data-node-id="39:7988" data-name="Background+Shadow+OverlayBlur">
+                        <div class="bg-[#556159] relative rounded-[9999px] shrink-0 size-[6px]" data-node-id="39:7989" data-name="Background"></div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#173b32] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:7990">
+                          <p class="leading-[13.2px]">SEMIPRESENCIAL + VISITA CD</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-[12px] content-stretch flex flex-col items-start pt-[3px] right-[12px]" data-node-id="39:7991" data-name="Container">
+                      <div class="backdrop-blur-[12px] bg-[rgba(23,59,50,0.9)] content-stretch flex items-start px-[12px] py-[3.5px] relative rounded-[9999px] shrink-0" data-node-id="39:7992" data-name="Overlay+OverlayBlur">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[11px] text-white tracking-[0.44px] whitespace-nowrap" data-node-id="39:7993">
+                          <p class="leading-[13.2px]">5 Semanas</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative w-full z-[1] flex flex-col items-start p-[20px] gap-[10px]" data-node-id="39:7994" data-name="Card Body">
+                    <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:7995" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:7996" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#d29049] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:7997">
+                          <p class="leading-[13.2px]">LOGÍSTICA Y PLANTA</p>
+                        </div>
+                      </div>
+                      <div class="relative shrink-0 flex items-center gap-[8px]" data-node-id="39:7998" data-name="Container">
+                        <div class="h-[12.667px] w-[13.333px] relative shrink-0" data-node-id="39:7999" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/81f5cd36-9e59-4d46-8609-a02d42eb17eb.svg">
+                        </div>
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] text-[#556159] text-[13px] whitespace-nowrap relative" data-node-id="39:8001">
+                          <p class="leading-[19.5px]">4.7 (51 egresados)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pb-[0.75px] relative w-full" data-node-id="39:8002" data-name="Heading 3">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[20px] tracking-[-0.2px]" data-node-id="39:8003" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[27.5px]">Gestión de Depósito, Trazabilidad y Logística Industrial Fueguina</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start overflow-clip relative w-full" data-node-id="39:8004" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[14px]" data-node-id="39:8005">
+                        <p class="leading-[20.3px]">Administración de insumos importados, aduana interna, sistemas ERP/WMS aplicados a manufactura de alta rotación y régimen de transporte insular.</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[12px] items-center pt-[8px] relative w-full" data-node-id="39:8006" data-name="Instructor Row">
+                      <div class="max-w-[556px] relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:8007" data-name="AB6AXuCe-t5cMSrLzNJpJxgs0EpNYCKCw_02zeXGIvjswgprj_BUkS8CK6XasbFL6LXg-IqizXbH96hHbHImV46Np2J1QMxiQ0ShaeQ1Bj-HRcsEOEEeEif8L0ZRozziIj5Tk8iTX4kPlBd-ipqymDqr0jYIgZnjsOSK71hSnnIXTqonpWE7v1cPSVwb0ASneudnpivhO9oBTCf-LSV0Yo30YuRcVz-shoCaB-x3KSA4QGU">
+                        <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-[9999px]">
+                          <img alt="" class="absolute h-full left-[-41.76%] max-w-none top-0 w-[183.51%]" src="assets/f36e40c2-5201-414e-81cd-795b83c122be.png">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8008" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:8009" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#141e1b] text-[13px] tracking-[0.26px] whitespace-nowrap" data-node-id="39:8010">
+                            <p class="leading-[16.9px]">Lic. Franco Garay</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8011" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#556159] text-[12px]" data-node-id="39:8012">
+                            <p class="leading-[18px]">Coordinador de Cadena de Suministro TDF</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[8px] relative w-full" data-node-id="39:8013" data-name="Certificate Tag &amp; Schedule:margin">
+                      <div class="bg-[#e5f0eb] content-stretch flex flex-col gap-[6px] items-start p-[12px] relative w-full" data-node-id="39:8014" data-name="Certificate Tag &amp; Schedule">
+                        <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:8015" data-name="Container">
+                          <div class="h-[10.667px] relative shrink-0 w-[14.667px]" data-node-id="39:8016" data-name="Container">
+                            <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/2023ea1d-b912-4062-9d79-0182f93a39fb.svg">
+                          </div>
+                          <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8018" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#141e1b] text-[11px] tracking-[0.44px]" data-node-id="39:8019">
+                              <p class="leading-[13.2px]">Incluye práctica de campo en Centros de Distribución Río Grande</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:8020" data-name="Container">
+                          <div class="h-[12.5px] relative shrink-0 w-[11.25px]" data-node-id="39:8021" data-name="Container">
+                            <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/24f6c481-edd4-40a4-9d52-d4a0943aebe8.svg">
+                          </div>
+                          <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8023" data-name="Container">
+                            <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[12px]" data-node-id="39:8024">
+                              <p class="leading-[18px]">Clases sincrónicas los Miércoles + 2 Sábados en depósito</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex items-center justify-between pb-[24px] pt-[8px] px-[24px] relative w-full responsive-stack-mobile" data-node-id="39:8025" data-name="Card Footer">
+                  <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8026" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start mb-[-0.1px] relative shrink-0 w-full" data-node-id="39:8027" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#556159] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:8028">
+                        <p class="leading-[13.2px]">INVERSIÓN TOTAL</p>
+                      </div>
+                    </div>
+                    <div class="[word-break:break-word] content-stretch flex gap-[4px] items-baseline leading-[0] mb-[-0.1px] relative shrink-0 w-full whitespace-nowrap" data-node-id="39:8029" data-name="Paragraph">
+                      <div class="flex flex-col font-['Bricolage_Grotesque:ExtraBold'] font-extrabold justify-center relative shrink-0 text-[#173b32] text-[28px] tracking-[-0.56px]" data-node-id="39:8030" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[30.8px]">$ 25.000</p>
+                      </div>
+                      <div class="flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center relative shrink-0 text-[#556159] text-[11px]" data-node-id="39:8031">
+                        <p class="leading-[16.5px]">ARS</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8032" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#d29049] text-[12px]" data-node-id="39:8033">
+                        <p class="leading-[18px]">3 cuotas fijas de $ 8.333 ARS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="bg-[#173b32] content-stretch flex gap-[6px] items-center px-[20px] py-[10px] relative rounded-[9999px] shrink-0 cursor-pointer self-center" data-node-id="39:8034" data-name="Link" href="detalle-curso.html">
+                    <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_0_0.5px_0] rounded-[9999px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)]" data-node-id="39:8035" data-name="Link:shadow"></div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:8036" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[15px] text-white tracking-[0.15px] whitespace-nowrap" data-node-id="39:8037">
+                        <p class="leading-[19.5px]">Inscribirse</p>
+                      </div>
+                    </div>
+                    <div class="relative shrink-0 size-[12px]" data-node-id="39:8038" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/28c171e3-1c77-418d-a919-acbd6818dc69.svg">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="gap-x-[24px] gap-y-[24px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_419.58px] relative w-full" data-node-id="39:8040" data-name="Section - 6. Sección de Compromiso y Requisitos de Admisión / Becas">
+              <div class="bg-[#ebf6f1] col-[1/span_7] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col gap-[24px] items-start justify-self-stretch p-[32px] relative rounded-[48px] row-1 self-start" data-node-id="39:8041" data-name="Beca Card (Bento Left)">
+                <div class="relative w-full flex flex-col items-start gap-[8px]" data-node-id="39:8042" data-name="Container">
+                  <div class="bg-[#d9e6dc] content-stretch flex gap-[8px] items-center px-[14px] py-[4px] rounded-[9999px] relative w-full" data-node-id="39:8043" data-name="Background">
+                    <div class="relative shrink-0 size-[13.333px]" data-node-id="39:8044" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/b17aac2a-0e9c-4266-a3a8-46d4d5560c53.svg">
+                    </div>
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:8046">
+                      <p class="leading-[13.2px]">ARTICULACIÓN CON POLO TECNOLÓGICO RÍO GRANDE</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8047" data-name="Heading 3">
+                    <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[24px] tracking-[-0.24px]" data-node-id="39:8048" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                      <p class="leading-[31.2px]">Programa de Becas y Articulación Laboral</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8049" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[16px]" data-node-id="39:8050">
+                      <p class="leading-[26px]">Fundación Mirgor, en acuerdo con empresas radicadas en el Parque Industrial de Río Grande y el Ministerio de Educación provincial, destina un fondo de becas de cobertura total (100% bonificado) para jóvenes fueguinos que buscan insertarse en la industria productiva.</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex gap-[12px] items-start justify-center pt-[8px] relative w-full responsive-flex-2" data-node-id="39:8051" data-name="Container">
+                    <div class="bg-white content-stretch flex flex-[1_0_0] gap-[12px] items-start min-w-px p-[14px] relative" data-node-id="39:8052" data-name="Background">
+                      <div class="h-[22px] relative shrink-0 w-[18px]" data-node-id="39:8053" data-name="Margin">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/ea6cfd4f-1850-42ba-8cba-c50c513b1864.svg">
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8055" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:8056" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#141e1b] text-[13px] tracking-[0.26px]" data-node-id="39:8057">
+                            <p class="leading-[16.9px]">Bolsa de Empleo Fabril</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8058" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#556159] text-[12px]" data-node-id="39:8059">
+                            <p class="leading-[18px]">Prioridad de entrevista en plantas Mirgor y aliadas.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-white content-stretch flex flex-[1_0_0] gap-[11.99px] items-start min-w-px p-[14px] relative" data-node-id="39:8060" data-name="Background">
+                      <div class="h-[18px] relative shrink-0 w-[22px]" data-node-id="39:8061" data-name="Margin">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/55151e64-b623-41eb-8313-09b030225578.svg">
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8063" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:8064" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#141e1b] text-[13px] tracking-[0.26px]" data-node-id="39:8065">
+                            <p class="leading-[16.9px]">Subsidio de Matrícula</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8066" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#556159] text-[12px]" data-node-id="39:8067">
+                            <p class="leading-[18px]">Acompañamiento integral de materiales y EPP.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-center flex flex-wrap gap-[12px] items-center pt-[8px] relative w-full responsive-wrap-mobile" data-node-id="39:8068" data-name="Container">
+                  <div class="bg-[#ffb86e] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center px-[24px] py-[10px] relative rounded-[9999px] shrink-0" data-node-id="39:8069" data-name="Button">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#131e18] text-[15px] text-center tracking-[0.15px]" data-node-id="39:8070">
+                      <p class="leading-[19.5px]">Postularme a Beca de Estudio</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8071" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#556159] text-[14px]" data-node-id="39:8072">
+                      <p class="leading-[20.3px]">Cupos limitados por cohorte</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white col-[8/span_5] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col gap-[39.53px] items-start justify-self-stretch p-[32px] relative rounded-[48px] row-1 self-start" data-node-id="39:8073" data-name="Requisitos de Admisión (Bento Right)">
+                <div class="content-stretch flex flex-col gap-[12px] items-start relative w-full" data-node-id="39:8074" data-name="Container">
+                  <div class="content-stretch flex gap-[7.99px] items-center relative w-full" data-node-id="39:8075" data-name="Container">
+                    <div class="h-[20px] relative shrink-0 w-[16px]" data-node-id="39:8076" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/94547430-d293-428c-b440-6388a11d98df.svg">
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8078" data-name="Heading 4">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[#00251d] text-[20px] tracking-[-0.2px]" data-node-id="39:8079" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p class="leading-[27px]">Requisitos de Ingreso a Planta</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8080" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#414845] text-[14px] w-full" data-node-id="39:8081">
+                      <p class="leading-[20.3px]">Por normas de seguridad fabril e higiene industrial (IRAM/OSHA) vigentes en el Parque Industrial Río Grande:</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col gap-[12px] items-start pt-[8px] relative w-full" data-node-id="39:8082" data-name="List">
+                    <div class="content-stretch flex gap-[12px] items-start relative w-full" data-node-id="39:8083" data-name="Item">
+                      <div class="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-[17.45px]" data-node-id="39:8084" data-name="Margin">
+                        <div class="bg-[#d9e6dc] content-stretch flex items-center justify-center pb-[1.5px] pt-[0.5px] relative rounded-[9999px] shrink-0 w-[17.45px]" data-node-id="39:8085" data-name="Background">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[12px] text-center whitespace-nowrap" data-node-id="39:8086">
+                            <p class="leading-[18px]">1</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start pr-[9.54px] relative" data-node-id="39:8087" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#141e1b] text-[14px]" data-node-id="39:8088">
+                          <p class=""><span class="leading-[20.3px]">Edad mínima:</span><span class="[word-break:break-word] font-['Plus_Jakarta_Sans:Regular'] font-normal leading-[20.3px]"> Ser mayor de 18 años al momento de iniciar las</span> prácticas.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[12px] items-start relative w-full" data-node-id="39:8089" data-name="Item">
+                      <div class="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-[12.98px]" data-node-id="39:8090" data-name="Margin">
+                        <div class="bg-[#d9e6dc] content-stretch flex items-center justify-center pb-[1.5px] pt-[0.5px] relative rounded-[9999px] shrink-0 w-[12.98px]" data-node-id="39:8091" data-name="Background">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[12px] text-center whitespace-nowrap" data-node-id="39:8092">
+                            <p class="leading-[18px]">2</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start pr-[10.87px] relative" data-node-id="39:8093" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#141e1b] text-[14px]" data-node-id="39:8094">
+                          <p class=""><span class="leading-[20.3px]">Residencia Fueguina:</span><span class="[word-break:break-word] font-['Plus_Jakarta_Sans:Regular'] font-normal leading-[20.3px]"> Radicación acreditable en Río Grande,</span> Tolhuin o Ushuaia (DNI actualizado).</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[11.99px] items-start relative w-full" data-node-id="39:8095" data-name="Item">
+                      <div class="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-[10.69px]" data-node-id="39:8096" data-name="Margin">
+                        <div class="bg-[#d9e6dc] content-stretch flex items-center justify-center pb-[1.5px] pt-[0.5px] relative rounded-[9999px] shrink-0 w-[10.69px]" data-node-id="39:8097" data-name="Background">
+                          <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[12px] text-center whitespace-nowrap" data-node-id="39:8098">
+                            <p class="leading-[18px]">3</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8099" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#141e1b] text-[14px]" data-node-id="39:8100">
+                          <p class=""><span class="leading-[20.3px]">EPP Obligatorio:</span><span class="[word-break:break-word] font-['Plus_Jakarta_Sans:Regular'] font-normal leading-[20.3px]"> Calzado de seguridad con puntera</span> dieléctrica para ingreso a talleres técnicos (provisto o requerido).</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-[#ebf6f1] content-stretch flex gap-[8px] items-center p-[12px] relative w-full" data-node-id="39:8101" data-name="Background">
+                  <div class="relative shrink-0 size-[15px]" data-node-id="39:8102" data-name="Container">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/44899be8-7b43-48ea-8bcb-b132a19b0788.svg">
+                  </div>
+                  <div class="content-stretch flex flex-col items-start pr-[34.58px] relative" data-node-id="39:8104" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#414845] text-[11px] tracking-[0.44px]" data-node-id="39:8105">
+                      <p class="leading-[13.2px]">Las batas antiestáticas (ESD) y antiparras son provistas por la Fundación Mirgor.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#173b32] content-stretch flex flex-col gap-[32px] items-start overflow-clip p-[40px] relative rounded-[48px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] w-full" data-node-id="39:8106" data-name="Section - 7. Canal de Asistencia Directa y Consultas de Sede">
+              <div class="absolute bg-[rgba(0,37,29,0.4)] blur-[40px] bottom-[-64.09px] right-[-64px] rounded-[9999px] size-[320px]" data-node-id="39:8107" data-name="Overlay+Blur"></div>
+              <div class="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_213.69px] relative w-full" data-node-id="39:8108" data-name="Container">
+                <div class="col-[1/span_8] content-stretch flex flex-col gap-[11.7px] items-start justify-self-stretch relative row-1 self-center" data-node-id="39:8109" data-name="Container">
+                  <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:8110" data-name="Container">
+                    <div class="bg-[#ffb86e] relative rounded-[9999px] shrink-0 size-[8px]" data-node-id="39:8111" data-name="Background"></div>
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#ffb86e] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:8112">
+                      <p class="leading-[13.2px]">ATENCIÓN PRESENCIAL Y VIRTUAL EN RÍO GRANDE</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8113" data-name="Heading 3">
+                    <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:Bold'] font-bold justify-center leading-[0] relative text-[32px] text-white tracking-[-0.64px] w-full" data-node-id="39:8114" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                      <p class="leading-[40px]">¿Tenés dudas sobre horarios de planta o requisitos de inscripción?</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8115" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#80a599] text-[18px] w-full" data-node-id="39:8116">
+                      <p class="leading-[29.25px]">Nuestro equipo de orientación académica de la sede Río Grande atiende por WhatsApp de Lunes a Viernes de 09:00 a 19:00 hs.</p>
+                    </div>
+                  </div>
+                  <div class="content-center flex flex-wrap gap-[16px] items-center pt-[8px] relative w-full responsive-wrap-mobile" data-node-id="39:8117" data-name="Container">
+                    <div class="content-stretch flex gap-[6px] items-center relative" data-node-id="39:8118" data-name="Container">
+                      <div class="relative shrink-0 size-[15px]" data-node-id="39:8119" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/913cd8b5-e956-4ce3-afe9-0ef97008e619.svg">
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8121" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#80a599] text-[13px] tracking-[0.26px]" data-node-id="39:8122">
+                          <p class="leading-[16.9px]">Lunes a Viernes 09:00 - 19:00 hs</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:8123" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#80a599] text-[13px] tracking-[0.26px] whitespace-nowrap" data-node-id="39:8124">
+                        <p class="leading-[16.9px]">•</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[6px] items-center relative" data-node-id="39:8125" data-name="Container">
+                      <div class="h-[15px] relative shrink-0 w-[10.5px]" data-node-id="39:8126" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/79498a5c-891f-41ec-ae56-3194f76058f5.svg">
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:8128" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[#80a599] text-[13px] tracking-[0.26px]" data-node-id="39:8129">
+                          <p class="leading-[16.9px]">Río Grande, Tierra del Fuego</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-[9/span_4] content-stretch flex flex-col gap-[12px] items-start justify-self-stretch relative row-1 self-center" data-node-id="39:8130" data-name="Container">
+                  <div class="bg-[#ffb86e] content-stretch flex gap-[8px] items-center justify-center px-[24px] py-[16px] relative rounded-[9999px] w-full" data-node-id="39:8131" data-name="Link">
+                    <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_0.01px_0_0] rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)]" data-node-id="39:8132" data-name="Link:shadow"></div>
+                    <div class="relative shrink-0 size-[18.333px]" data-node-id="39:8133" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/75eb56cf-66be-4f1b-8b4f-b6e4314dc37c.svg">
+                    </div>
+                    <div class="content-stretch flex flex-col items-center pl-[12.36px] pr-[12.38px] relative" data-node-id="39:8135" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[#131e18] text-[15px] text-center tracking-[0.15px]" data-node-id="39:8136">
+                        <p class="leading-[19.5px]">Chatear por WhatsApp (+54 9 2964 55-2233)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[rgba(218,229,224,0.2)] content-stretch flex gap-[8px] items-center justify-center px-[16px] py-[10px] relative rounded-[9999px] w-full" data-node-id="39:8137" data-name="Link">
+                    <div class="h-[12px] relative shrink-0 w-[15px]" data-node-id="39:8138" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/9756c8e5-b51a-4139-93fb-c7c7d7695e9e.svg">
+                    </div>
+                    <div class="content-stretch flex flex-col items-center relative" data-node-id="39:8140" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative text-[13px] text-center text-white tracking-[0.26px]" data-node-id="39:8141">
+                        <p class="leading-[16.9px]">fundacion@mirgor.com.ar</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-[rgba(128,165,153,0.2)] border-solid border-t content-stretch flex gap-[24px] items-start justify-center pt-[33px] relative w-full responsive-flex-3" data-node-id="39:8142" data-name="FAQ rápido expandible / acordeón">
+                <div class="flex-[1_0_0] min-w-px relative" data-node-id="39:8143" data-name="Container">
+                  <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[6px] items-start relative size-full">
+                    <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:8144" data-name="Heading 5">
+                      <div class="relative shrink-0 size-[15px]" data-node-id="39:8145" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/aafb1918-f862-47ae-b1b2-8cba954343ef.svg">
+                      </div>
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[15px] text-white tracking-[0.15px]" data-node-id="39:8147">
+                        <p class="leading-[19.5px]">¿Se emite certificado homologado?</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8148" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#80a599] text-[14px] w-full" data-node-id="39:8149">
+                        <p class="leading-[20.3px]">Sí, todos los trayectos cuentan con certificación conjunta de Fundación Mirgor y la UTN Facultad Regional Río Grande.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-[1_0_0] min-w-px relative" data-node-id="39:8150" data-name="Container">
+                  <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[6px] items-start pb-[20.3px] relative size-full">
+                    <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:8151" data-name="Heading 5">
+                      <div class="h-[12px] relative shrink-0 w-[15px]" data-node-id="39:8152" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/a33ddc03-247f-493c-b00e-6b588d36eda9.svg">
+                      </div>
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[15px] text-white tracking-[0.15px]" data-node-id="39:8154">
+                        <p class="leading-[19.5px]">¿Hay transporte hasta la planta?</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8155" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#80a599] text-[14px] w-full" data-node-id="39:8156">
+                        <p class="leading-[20.3px]">La planta cuenta con paradas de líneas urbanas de Río Grande (Línea B y C) en la rotonda de Malvinas y Ruta 3.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-[1_0_0] min-w-px relative" data-node-id="39:8157" data-name="Container">
+                  <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[6px] items-start relative size-full">
+                    <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:8158" data-name="Heading 5">
+                      <div class="h-[12px] relative shrink-0 w-[16.5px]" data-node-id="39:8159" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/404b42c4-687f-43da-8927-40e0a67587f9.svg">
+                      </div>
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Bold'] font-bold justify-center leading-[0] relative text-[15px] text-white tracking-[0.15px]" data-node-id="39:8161">
+                        <p class="leading-[19.5px]">¿Qué medios de pago aceptan?</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:8162" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:Regular'] font-normal justify-center leading-[0] relative text-[#80a599] text-[14px] w-full" data-node-id="39:8163">
+                        <p class="leading-[20.3px]">Cobros procesados vía Mercado Pago en Pesos Argentinos (ARS) con tarjetas de débito, crédito en cuotas y transferencias.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-[#ebf6f1] content-stretch flex flex-col items-center justify-end site-footer" data-node-id="39:8279" data-name="Footer">
+        <div class="content-stretch flex flex-col gap-[40px] items-start max-w-[1280px] pb-[40px] pt-[64px] px-[40px] relative w-full mx-auto" data-node-id="I39:8279;29:5151" data-name="Container">
+          <div class="gap-x-[40px] gap-y-[40px] grid grid-cols-[repeat(5,minmax(0,1fr))] grid-rows-[_169.28px] relative w-full" data-node-id="I39:8279;29:5152" data-name="Container">
+            <div class="col-[1/span_2] content-stretch flex flex-col gap-[20px] items-start justify-self-stretch pb-[61.28px] relative row-1 self-start" data-node-id="I39:8279;29:5153" data-name="Container">
+              <div class="max-w-[456px] relative flex items-center" data-node-id="I39:8279;29:5154" data-name="Link → capacitados.ar - Potenciá tu talento">
+                <div class="content-stretch flex gap-[12px] items-center relative" data-node-id="29:5103" data-name="Link">
+                  <div class="overflow-clip relative rounded-[9px] shrink-0 size-[36px] flex items-center justify-center" data-node-id="29:4973" data-name="Profile">
+                    <img src="images/logo.png" alt="capacitados.ar logo" class="size-full object-contain pointer-events-none">
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative" data-node-id="29:4974" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="29:4975" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[20px] tracking-[-0.5px] whitespace-nowrap" data-node-id="29:4976" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                        <p><span class="leading-[20px]">capacitados</span><span class="[word-break:break-word] font-['Bricolage_Grotesque:Regular'] font-normal leading-[20px] text-[#ffb86e]" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">.ar</span></p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-node-id="29:4977" data-name="Margin">
+                      <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="29:4978" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#414845] text-[11px] tracking-[0.55px] uppercase w-full" data-node-id="29:4979">
+                          <p class="leading-[13.2px]">POTENCIÁ TU TALENTO</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col items-start max-w-[384px] relative" data-node-id="I39:8279;29:5155" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#414845] text-[16px]" data-node-id="I39:8279;29:5156">
+                  <p class="leading-[24px]">Aprende algo nuevo. Diseña tu futuro. Talleres prácticos y cursos intensivos con salida laboral en Argentina.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 content-stretch flex flex-col gap-[7px] items-start relative row-1 self-start" data-node-id="I39:8279;29:5157" data-name="Container">
+              <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5158" data-name="Heading 4">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#141e1b] text-[15px] tracking-[0.15px] w-full" data-node-id="I39:8279;29:5159">
+                  <p class="leading-[19.5px]">Explorar</p>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col gap-[3px] items-start relative w-full" data-node-id="I39:8279;29:5160" data-name="List">
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5161" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5162">
+                    <p class="leading-[20.3px]">Tecnología</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5163" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5164">
+                    <p class="leading-[20.3px]">Diseño</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5165" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5166">
+                    <p class="leading-[20.3px]">Artes</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5167" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5168">
+                    <p class="leading-[20.3px]">Gastronomía</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5169" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5170">
+                    <p class="leading-[20.3px]">Oficios</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5171" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5172">
+                    <p class="leading-[20.3px]">Negocios</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 content-stretch flex flex-col gap-[7px] items-start pb-[72.89px] relative row-1 self-start" data-node-id="I39:8279;29:5173" data-name="Container">
+              <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5174" data-name="Heading 4">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#141e1b] text-[15px] tracking-[0.15px] w-full" data-node-id="I39:8279;29:5175">
+                  <p class="leading-[19.5px]">Para Academias</p>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col gap-[3px] items-start relative w-full" data-node-id="I39:8279;29:5176" data-name="List">
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5177" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5178">
+                    <p class="leading-[20.3px]">Publicar cursos</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5179" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5180">
+                    <p class="leading-[20.3px]">Planes institucionales</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5181" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5182">
+                    <p class="leading-[20.3px]">Preguntas frecuentes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 content-stretch flex flex-col gap-[7px] items-start pb-[48.59px] relative row-1 self-start" data-node-id="I39:8279;29:5183" data-name="Container">
+              <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5184" data-name="Heading 4">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#141e1b] text-[15px] tracking-[0.15px] w-full" data-node-id="I39:8279;29:5185">
+                  <p class="leading-[19.5px]">Soporte y Legal</p>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col gap-[3px] items-start relative w-full" data-node-id="I39:8279;29:5186" data-name="List">
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5187" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5188">
+                    <p class="leading-[20.3px]">Centro de ayuda</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5189" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5190">
+                    <p class="leading-[20.3px]">Términos y condiciones</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5191" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5192">
+                    <p class="leading-[20.3px]">Privacidad</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I39:8279;29:5193" data-name="Item">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[14px] w-full" data-node-id="I39:8279;29:5194">
+                    <p class="leading-[20.3px]">Defensa del consumidor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-stretch flex items-center justify-between pt-[24px] relative w-full responsive-stack-mobile" data-node-id="I39:8279;29:5195" data-name="Container">
+            <div class="[word-break:break-word] flex flex-col font-['Libertinus_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#414845] text-[14px]" data-node-id="I39:8279;29:5225">
+              <p class="leading-[20.3px]">©2026 capacitados.ar - República Argentina. Todos los derechos reservados.</p>
+            </div>
+            <div class="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I39:8279;29:5203" data-name="Link">
+              <div class="relative shrink-0 size-[13.333px]" data-node-id="I39:8279;29:5204" data-name="Container">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/39efac90-6f2e-42bb-8a41-3986e9c73796.svg">
+              </div>
+              <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[11px] tracking-[0.44px] whitespace-nowrap" data-node-id="I39:8279;29:5206">
+                <p class="leading-[13.2px]">¿Necesitás ayuda?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

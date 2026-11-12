@@ -1,0 +1,574 @@
+/* ==========================================================================
+   5. RESPONSIVE DESIGN & MEDIA QUERIES (Notebooks, Tablets, Moviles 320px)
+   ========================================================================== */
+
+.via-\[\#00251d\] { --tw-gradient-via: #00251d; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+.via-\[\#ebf6f1\] { --tw-gradient-via: #ebf6f1; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+.via-\[rgba\(0\,0\,0\,0\.2\)\] { --tw-gradient-via: rgba(0,0,0,0.2); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+.via-\[rgba\(0\,37\,29\,0\.2\)\] { --tw-gradient-via: rgba(0,37,29,0.2); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+.via-\[rgba\(0\,37\,29\,0\)\] { --tw-gradient-via: rgba(0,37,29,0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+.via-\[rgba\(223\,235\,230\,0\.4\)\] { --tw-gradient-via: rgba(223,235,230,0.4); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+.via-\[rgba\(255\,255\,255\,0\.2\)\] { --tw-gradient-via: rgba(255,255,255,0.2); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+
+/* ==========================================================================
+   ADAPTACIÓN FLUIDA PARA NOTEBOOKS (<= 1280px), TABLETS (<= 960px) Y MÓVILES (<= 680px)
+   ========================================================================== */
+
+/* Grillas auto-adaptables para tarjetas de cursos y categorías */
+[data-name="Course Cards Grid"],
+[data-name="Bento Grid"],
+[data-name="Course Grid (3x3)"] {
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)) !important;
+  grid-template-rows: auto !important;
+  gap: 16px !important;
+}
+
+/* Opciones de pago en Checkout Paso 2 auto-adaptables */
+[data-name*="Payment Method"] {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  gap: 12px !important;
+  width: 100% !important;
+}
+
+[data-name*="Payment Method"] > * {
+  width: 100% !important;
+}
+
+/* Mejorar estética de tarjetas de métricas y etiquetas de especialidades */
+[data-name="Métricas Clave en Pills / Tarjetas Horizontales"] > *,
+[data-name="Impact Metrics Grid"] > * {
+  border-radius: 14px;
+}
+
+[data-name="Especialidades"] > div:last-child {
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+}
+
+[data-name="Especialidades"] > div:last-child > * {
+  width: auto !important;
+}
+
+/* Logo institucional de Fundación Mirgor con proporción cuadrada fija y limpia */
+[data-node-id="39:7673"] {
+  width: 96px !important;
+  height: 96px !important;
+  border-radius: 24px !important;
+  flex-shrink: 0 !important;
+  align-self: flex-start !important;
+}
+
+[data-node-id="39:7674"] {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 24px !important;
+}
+
+[data-node-id="39:7687"] {
+  border-radius: 10px !important;
+  padding: 5px 10px !important;
+}
+
+@media (max-width: 1024px) {
+  /* Colapsar grillas de 12 columnas (Sidebar + Catálogo, Curso + Checkout Sidebar) */
+  .grid-cols-\[repeat\(12\,minmax\(0\,1fr\)\)\] {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 20px !important;
+  }
+
+  .col-\[1\/span_2\],
+  .col-\[1\/span_3\],
+  .col-\[1\/span_7\],
+  .col-\[1\/span_8\],
+  .col-\[4\/span_9\],
+  .col-\[8\/span_5\],
+  .col-\[9\/span_4\] {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+  }
+
+  /* Mostrar botón para desplegar/ocultar filtros en pantallas medianas y chicas */
+  .mobile-filter-toggle {
+    display: flex;
+  }
+
+  .filters-collapsed-mobile {
+    display: none !important;
+  }
+
+  /* Grillas de 3 columnas pasan a 2 columnas en tablet */
+  .grid-cols-\[repeat\(3\,minmax\(0\,1fr\)\)\] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: auto !important;
+    gap: 16px !important;
+  }
+
+  /* Footer de 5 columnas pasa a 2 columnas en tablet */
+  .grid-cols-\[repeat\(5\,minmax\(0\,1fr\)\)\] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: auto !important;
+    gap: 24px !important;
+  }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5,
+  .row-1, .row-2, .row-3 {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Banners y secciones horizontales pasan a columna limpia */
+  [data-name="Section - Academy & Instructor Spotlight Banner"] > div,
+  [data-name="Curated Quick Section: Próximos con cupos limitados"] > div > div,
+  [data-name="Section - MÓDULO INSTITUCIONAL DE VINCULACIÓN Y ALIANZAS"] > div > div,
+  [data-name="Hero Verification Card"] > div,
+  [data-node-id="39:7671"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  [data-name="Visual Accent Header Banner"] {
+    height: 168px !important;
+    margin-bottom: -44px !important;
+  }
+
+  [data-node-id="39:7661"] {
+    left: 16px !important;
+    right: 16px !important;
+    top: 16px !important;
+    justify-content: flex-start !important;
+  }
+
+  [data-name="Academy Identity"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  [data-name="Direct Contact Pill & Action"] {
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+
+  [data-node-id="39:7800"] {
+    display: none !important;
+  }
+
+  [data-node-id="39:7802"] {
+    align-items: flex-start !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Barra de filtros horizontales y píldoras con wrap */
+  [data-name="Horizontal Sector Pills"],
+  [data-name="Category Filter Pills"],
+  [data-name="Filtros por Localidad (Pills)"],
+  [data-name="Filtros por Localidad (Pills)"] > div:last-child,
+  [data-name="Filtros por Categoría Temática Rápida"] {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    gap: 8px !important;
+  }
+
+  /* Filas de 4 tarjetas (Métricas de Academias, Mirgor, Inicio) en grilla 2x2 cómoda en tablet */
+  .responsive-flex-4,
+  [data-name="Métricas Clave en Pills / Tarjetas Horizontales"],
+  [data-name="Trust Stats Banner"],
+  [data-name="Impact Metrics Grid"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  /* Filas de 3 tarjetas (FAQ rápido, Trust Badges) auto-adaptables en tablet */
+  .responsive-flex-3 {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .responsive-flex-4 > *,
+  .responsive-flex-3 > *,
+  [data-name="Métricas Clave en Pills / Tarjetas Horizontales"] > *,
+  [data-name="Trust Stats Banner"] > *,
+  [data-name="Impact Metrics Grid"] > * {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   HEADER RESPONSIVE CON MENÚ DESPLEGABLE ESTÉTICO (<= 900px)
+   ========================================================================== */
+@media (max-width: 900px) {
+  .site-header {
+    background-color: rgba(241, 252, 247, 0.96) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+  }
+
+  .header-inner {
+    min-height: 56px;
+    padding: 8px 16px !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  /* Ocultar barra de links y botones de sesión por defecto en móvil/tablet */
+  .site-header [data-name="NavBarPrincipal"],
+  .site-header [data-name="LoginAndRegister"] {
+    display: none !important;
+  }
+
+  /* Al abrir el menú: tarjeta desplegable limpia y moderna */
+  .site-header.mobile-menu-open [data-name="NavBarPrincipal"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    order: 3;
+    background-color: #ffffff !important;
+    border: 1px solid rgba(23, 59, 50, 0.1) !important;
+    border-radius: 16px !important;
+    padding: 8px !important;
+    gap: 4px !important;
+    box-shadow: 0 12px 28px -6px rgba(0, 37, 29, 0.12) !important;
+    margin-top: 4px !important;
+  }
+
+  .site-header.mobile-menu-open [data-name="NavBarPrincipal"] > a,
+  .site-header.mobile-menu-open [data-name="NavBarPrincipal"] > div {
+    width: 100% !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+
+  .site-header.mobile-menu-open [data-name="LoginAndRegister"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+    order: 4;
+    gap: 8px !important;
+    padding-top: 2px !important;
+    padding-bottom: 4px !important;
+  }
+
+  .site-header.mobile-menu-open [data-name="LoginAndRegister"] > div,
+  .site-header.mobile-menu-open [data-name="LoginAndRegister"] > a {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 9px 12px !important;
+    border-radius: 9999px !important;
+  }
+
+  .site-header.mobile-menu-open [data-name="LoginAndRegister"] > div:first-child {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(23, 59, 50, 0.18) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Reducir paddings laterales excesivos y bordes muy curvos en pantallas móviles (320px - 720px) */
+  .px-\[40px\],
+  .px-\[32px\],
+  .px-\[64px\],
+  .px-\[24px\] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .p-\[40px\],
+  .p-\[32px\],
+  .p-\[64px\],
+  .p-\[24px\] {
+    padding: 16px !important;
+  }
+
+  .rounded-\[48px\] {
+    border-radius: 24px !important;
+  }
+
+  .rounded-\[32px\] {
+    border-radius: 20px !important;
+  }
+
+  /* Apilar contenedores flex horizontales con bloques de texto largos en móvil */
+  .responsive-stack-mobile {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    height: auto !important;
+  }
+
+  .responsive-stack-mobile > * {
+    flex: 0 0 auto !important;
+    max-width: 100% !important;
+  }
+
+  .responsive-wrap-mobile {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    height: auto !important;
+  }
+
+  /* Todas las grillas de 2, 3 y 5 columnas y tiras horizontales de 2, 3 y 4 tarjetas pasan a 1 sola columna en móvil */
+  .grid-cols-\[repeat\(2\,minmax\(0\,1fr\)\)\],
+  .grid-cols-\[repeat\(3\,minmax\(0\,1fr\)\)\],
+  .grid-cols-\[repeat\(5\,minmax\(0\,1fr\)\)\],
+  .responsive-flex-4,
+  .responsive-flex-3,
+  .responsive-flex-2,
+  [data-name="Course Cards Grid"],
+  [data-name="Bento Grid"],
+  [data-name="Course Grid (3x3)"],
+  [data-name="Métricas Clave en Pills / Tarjetas Horizontales"],
+  [data-name="Trust Stats Banner"],
+  [data-name="Impact Metrics Grid"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .responsive-flex-4 > *,
+  .responsive-flex-3 > *,
+  .responsive-flex-2 > *,
+  [data-name="Métricas Clave en Pills / Tarjetas Horizontales"] > *,
+  [data-name="Trust Stats Banner"] > *,
+  [data-name="Impact Metrics Grid"] > * {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Header de Checkout limpio en una sola fila en móvil */
+  [data-name="Header modal de compra"] {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  [data-name="Header modal de compra"] [data-name="Overlay"] {
+    display: none !important;
+  }
+
+  [data-name="Header modal de compra"] > div,
+  [data-name="Header modal de compra"] > div > div {
+    height: auto !important;
+    min-height: 52px;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    padding: 4px 0 !important;
+  }
+
+  /* Buscadores (Omnisearch Bar, Search Input y Searchbars) apilados con estética limpia en móvil */
+  [data-name="Omnisearch Bar"] > div:first-child,
+  [data-name="Rubro-Specific Live Searchbar"],
+  [data-name="Search Input"],
+  [data-name="Search Input Bar"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    border-radius: 18px !important;
+    padding: 10px !important;
+    height: auto !important;
+    gap: 8px !important;
+  }
+
+  [data-name="Omnisearch Bar"] > div:first-child > *,
+  [data-name="Rubro-Specific Live Searchbar"] > *,
+  [data-name="Search Input"] > *,
+  [data-name="Search Input Bar"] > * {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    justify-content: center;
+  }
+
+  [data-name="Omnisearch Bar"] [data-name="Divider"],
+  [data-name="Omnisearch Bar"] [data-name="Vertical Divider"],
+  [data-name="Search Input"] > [data-name="Margin"],
+  [data-name="Search Input Bar"] > [data-name="Margin"] {
+    display: none !important;
+  }
+
+  /* Permitir que cualquier texto con whitespace-nowrap haga salto de línea si excede el ancho móvil */
+  .whitespace-nowrap {
+    white-space: normal !important;
+  }
+
+  .proto-dock .whitespace-nowrap,
+  .proto-nav-link,
+  .proto-dock-badge {
+    white-space: nowrap !important;
+  }
+
+  /* Ajustar barras de progreso de Checkout, encabezados de sección, tarjetas de instructor y filas de botones inferiores */
+  [data-name="Top Stepper Progress Bar"] > div,
+  [data-name="Result Counter & Applied Filter Chips"],
+  [data-name="Header Row"],
+  [data-name="Section Header"],
+  [data-name="Academy Identity"],
+  [data-name="Section - Instructor Profile Card"],
+  [data-name="Section - Academy Snapshot Card"],
+  [data-name="Guarantee Banner"],
+  [data-name="Local Support WhatsApp Banner"],
+  [data-name="Institutional Quality & Compliance Footer Banner"],
+  [data-name="Actions"],
+  [data-name="Action Buttons"],
+  [data-name="Action Footer Rows"],
+  [data-name="Card Footer"],
+  [data-name="Footer modal compra"] > div > div {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    height: auto !important;
+  }
+
+  [data-name="Pagination"] {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 6px !important;
+  }
+
+  /* Tarjeta VISA visual en Checkout Paso 2 adaptable a pantallas chicas */
+  [data-name="Visual Credit Card"],
+  [data-name="Realistic Credit Card Graphic"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 180px !important;
+    padding: 18px !important;
+  }
+
+  .tracking-\[5\.28px\] {
+    letter-spacing: 1.5px !important;
+  }
+
+  /* Modal de Cancelación compacto, legible y 100% visible en pantallas móviles (320px - 720px) */
+  .cancel-modal-backdrop {
+    padding: 12px 10px 100px 10px !important;
+  }
+
+  .cancel-modal-backdrop > div {
+    padding: 18px 14px 28px 14px !important;
+    border-radius: 22px !important;
+    margin-bottom: 30px !important;
+  }
+
+  [data-node-id="59:10768"] {
+    padding-bottom: 24px !important;
+    margin-bottom: 30px !important;
+  }
+
+  [data-node-id="59:10769"] {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+  }
+
+  [data-node-id="59:10780"] {
+    font-size: clamp(18.5px, 5.4vw, 23px) !important;
+  }
+
+  [data-node-id="59:10782"] {
+    font-size: 13px !important;
+  }
+
+  [data-node-id="59:10783"] {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  [data-node-id="59:10784"] {
+    padding: 12px !important;
+    gap: 8px !important;
+    border-radius: 16px !important;
+  }
+
+  [data-node-id="59:10785"] {
+    gap: 10px !important;
+    padding-bottom: 6px !important;
+  }
+
+  [data-node-id="59:10786"] {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 12px !important;
+  }
+
+  [data-node-id="59:10791"] {
+    font-size: 15px !important;
+  }
+
+  [data-node-id="59:10797"],
+  [data-node-id="59:10802"] {
+    border-radius: 14px !important;
+    padding: 10px 12px !important;
+  }
+
+  [data-node-id="59:10800"] {
+    padding-right: 0 !important;
+  }
+
+  [data-node-id="59:10813"] {
+    padding: 12px 16px !important;
+    min-height: 46px !important;
+  }
+
+  [data-node-id="59:10819"] {
+    padding: 8px 16px !important;
+  }
+
+  [data-node-id="59:10821"],
+  [data-node-id="59:10822"] {
+    padding-top: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .proto-dock-badge {
+    display: none;
+  }
+
+  .px-\[40px\],
+  .px-\[32px\],
+  .px-\[64px\],
+  .px-\[24px\] {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  /* Ocultar subtítulo pequeño del logo en pantallas ultra angostas (<= 360px) si falta espacio */
+  [data-node-id="29:4977"] p {
+    font-size: 9.5px !important;
+    letter-spacing: 0.3px !important;
+  }
+}
+

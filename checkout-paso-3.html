@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Paso 3: Revisión y Confirmación — capacitados.ar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="checkout-paso-3.html">
+  <!-- Barra flotante de navegación del prototipo (10 pantallas) -->
+  <nav class="proto-dock" aria-label="Navegación de pantallas del prototipo">
+    <div class="proto-dock-inner">
+      <span class="proto-dock-badge">PROTOTIPO · 10 PANTALLAS</span>
+      <div class="proto-dock-links">
+        <a href="index.html" class="proto-nav-link">1. Inicio</a>
+        <a href="explorar-cursos.html" class="proto-nav-link">2. Explorar Cursos</a>
+        <a href="academias.html" class="proto-nav-link">3. Academias</a>
+        <a href="academia-mirgor.html" class="proto-nav-link">4. Cursos Academia</a>
+        <a href="detalle-curso.html" class="proto-nav-link">5. Detalle Curso</a>
+        <a href="checkout-paso-1.html" class="proto-nav-link">6. Checkout Paso 1</a>
+        <a href="checkout-paso-2.html" class="proto-nav-link">7. Checkout Paso 2</a>
+        <a href="checkout-paso-3.html" class="proto-nav-link active">8. Checkout Paso 3</a>
+        <a href="confirmacion.html" class="proto-nav-link">9. Confirmación</a>
+        <a href="cancelacion.html" class="proto-nav-link">10. Modal Cancelación</a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="page-shell bg-[#f1fcf7] relative w-full" data-node-id="39:9537" data-name="Checkout — Paso 3: Revisión y Confirmación">
+      <header class="backdrop-blur-[12px] bg-[rgba(241,252,247,0.9)] border-[rgba(193,200,196,0.3)] border-b border-solid content-stretch flex flex-col items-center pb-px px-[64px] shadow-[0px_1px_8px_0px_rgba(0,0,0,0.04)] site-header" data-node-id="39:9823" data-name="Header modal de compra">
+        <div class="max-w-[1152px] relative w-full justify-between mx-auto header-inner" data-node-id="I39:9823;29:2427" data-name="Container">
+          <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-between max-w-[inherit] px-[16px] relative size-full responsive-wrap-mobile">
+            <div class="content-stretch flex items-center relative rounded-[6px]" data-node-id="I39:9823;29:2428" data-name="Link">
+              <div class="content-stretch flex gap-[12px] items-center relative" data-node-id="29:5103" data-name="Link">
+                <div class="overflow-clip relative rounded-[9px] shrink-0 size-[36px] flex items-center justify-center" data-node-id="29:4973" data-name="Profile">
+                  <img src="images/logo.png" alt="capacitados.ar logo" class="size-full object-contain pointer-events-none">
+                </div>
+                <div class="content-stretch flex flex-col items-start relative" data-node-id="29:4974" data-name="Container">
+                  <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="29:4975" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Bricolage_Grotesque:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#173b32] text-[20px] tracking-[-0.5px] whitespace-nowrap" data-node-id="29:4976" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">
+                      <p><span class="leading-[20px]">capacitados</span><span class="[word-break:break-word] font-['Bricolage_Grotesque:Regular'] font-normal leading-[20px] text-[#ffb86e]" style="font-variation-settings: &quot;opsz&quot; 14, &quot;wdth&quot; 100">.ar</span></p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-node-id="29:4977" data-name="Margin">
+                    <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="29:4978" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Plus_Jakarta_Sans:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#414845] text-[11px] tracking-[0.55px] uppercase w-full" data-node-id="29:4979">
+                        <p class="leading-[13.2px]">POTENCIÁ TU TALENTO</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[rgba(217,230,220,0.5)] content-stretch flex gap-[6px] items-center px-[12px] py-[4px] relative rounded-[9999px] shrink-0" data-node-id="I39:9823;29:2433" data-name="Overlay">
+              <div class="h-[14px] relative shrink-0 w-[10.667px]" data-node-id="I39:9823;29:2434" data-name="Container">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/8141b345-5f8f-45cb-a02c-914cbec19d6f.svg">
+              </div>
+              <div class="relative shrink-0 flex items-center" data-node-id="I39:9823;29:2436" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#00251d] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap relative" data-node-id="I39:9823;29:2437">
+                  <p class="leading-[13.2px]">INSCRIPCIÓN SEGURA</p>
+                </div>
+              </div>
+            </div>
+            <button class="content-stretch cursor-pointer flex gap-[10px] items-center pl-[12px] pr-[14px] py-[6px] relative rounded-[9999px] shrink-0" data-node-id="I39:9823;29:2438" data-name="Nav → Link">
+              <div class="content-stretch flex flex-col h-[18px] items-start justify-center relative shrink-0" data-node-id="I39:9823;29:2439" data-name="Container:css-transform">
+                <div class="relative shrink-0 size-[12px]" data-node-id="I39:9823;29:2440" data-name="Container">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/afd0433f-cc2b-4ed6-9441-789d911d1be4.svg">
+                </div>
+              </div>
+              <div class="relative shrink-0 flex items-center" data-node-id="I39:9823;29:2442" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[13px] text-left tracking-[0.26px] whitespace-nowrap relative" data-node-id="I39:9823;29:2443">
+                  <p class="leading-[16.9px]">Volver al Curso</p>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="content-stretch flex flex-col items-start pb-[32px] pt-[20px] px-[80px] site-main pt-[24px]" data-node-id="39:9562" data-name="Main">
+        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9563" data-name="Container">
+          <div class="content-stretch flex flex-col items-start pb-[32px] relative w-full" data-node-id="39:9564" data-name="Stepper Header Tracker:margin">
+            <div class="bg-[#ebf6f1] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-center px-[176px] py-[20px] relative rounded-[32px] w-full" data-node-id="39:9565" data-name="Stepper Header Tracker">
+              <div class="content-stretch flex items-center justify-between max-w-[768px] relative w-full responsive-wrap-mobile" data-node-id="39:9566" data-name="Container">
+                <div class="-translate-y-1/2 absolute bg-[#dae5e0] content-stretch flex flex-col h-[4px] items-start justify-center left-[24px] right-[24px] top-[calc(50%+0.09px)]" data-node-id="39:9567" data-name="Connecting Progress Line">
+                  <div class="bg-[#00251d] flex-[1_0_0] min-h-px relative w-full" data-node-id="39:9568" data-name="Background"></div>
+                </div>
+                <div class="content-stretch flex flex-col gap-[5px] items-center relative shrink-0" data-node-id="39:9569" data-name="Step 1: Completed">
+                  <div class="bg-[#00251d] content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:9570" data-name="Background">
+                    <div class="-translate-x-1/2 absolute bg-[rgba(255,255,255,0)] left-1/2 rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] size-[36px] top-0" data-node-id="39:9571" data-name="Overlay+Shadow"></div>
+                    <div class="h-[8.017px] relative shrink-0 w-[10.867px]" data-node-id="39:9572" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/823e8b36-feb3-461e-900e-45d0aeb75fcd.svg">
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:9574" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#00251d] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:9575">
+                      <p class="leading-[13.2px]">1. DATOS PERSONALES</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col gap-[5px] items-center relative shrink-0" data-node-id="39:9576" data-name="Step 2: Completed">
+                  <div class="bg-[#00251d] content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:9577" data-name="Background">
+                    <div class="-translate-x-1/2 absolute bg-[rgba(255,255,255,0)] left-1/2 rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] size-[36px] top-0" data-node-id="39:9578" data-name="Overlay+Shadow"></div>
+                    <div class="h-[8.017px] relative shrink-0 w-[10.867px]" data-node-id="39:9579" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/823e8b36-feb3-461e-900e-45d0aeb75fcd.svg">
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:9581" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#00251d] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:9582">
+                      <p class="leading-[13.2px]">2. PAGO</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col gap-[5px] items-center relative shrink-0" data-node-id="39:9583" data-name="Step 3: Active Confirmation">
+                  <div class="bg-[#00251d] content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:9584" data-name="Background">
+                    <div class="-translate-x-1/2 absolute bg-[rgba(255,255,255,0)] left-1/2 rounded-[9999px] shadow-[0px_0px_0px_4px_#d9e6dc,0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] size-[36px] top-0" data-node-id="39:9585" data-name="Overlay+Shadow"></div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:9586" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap" data-node-id="39:9587">
+                        <p class="leading-[27px]">3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:9588" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#00251d] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="39:9589">
+                      <p class="leading-[13.2px]">3. CONFIRMACIÓN</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_1126.86px] relative w-full" data-node-id="39:9590" data-name="Main Split Layout">
+            <div class="col-[1/span_8] content-stretch flex flex-col gap-[24px] items-start justify-self-stretch relative row-1 self-start" data-node-id="39:9591" data-name="LEFT COLUMN: Review Cards &amp; Consent (65% on Desktop -&gt; cols 7)">
+              <div class="content-stretch flex flex-col gap-[4px] items-start relative w-full" data-node-id="39:9592" data-name="Section Title Context">
+                <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9593" data-name="Margin:align-flex-start">
+                  <div class="content-stretch flex flex-col items-start pb-[4px] relative" data-node-id="39:9594" data-name="Margin">
+                    <div class="bg-[#d9e6dc] content-stretch flex gap-[8px] items-center px-[10px] py-[2px] relative rounded-[9999px]" data-node-id="39:9595" data-name="Background">
+                      <div class="relative shrink-0 size-[10.5px]" data-node-id="39:9596" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/0ed16761-8b33-4920-b688-5d3146e144bf.svg">
+                      </div>
+                      <div class="relative flex items-center" data-node-id="39:9598" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#00251d] text-[11px] tracking-[0.55px] uppercase relative" data-node-id="39:9599">
+                          <p class="leading-[13.2px]">PASO FINAL ANTES DEL ALTA EN AULA VIRTUAL</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9600" data-name="Heading 1">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#00251d] text-[32px] tracking-[-0.8px] w-full" data-node-id="39:9601">
+                    <p class="leading-[40px]">Revisá y confirmá tu inscripción</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9602" data-name="Container">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#414845] text-[16px] w-full" data-node-id="39:9603">
+                    <p class="leading-[24px]">Verificá que todos los datos sean correctos antes de procesar el pago. Podés modificar cualquier sección de forma inmediata.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col gap-[15.99px] items-start p-[24px] relative rounded-[32px] w-full" data-node-id="39:9604" data-name="CARD 1: Resumen Alumno &amp; Certificación">
+                <div class="border-[#dae5e0] border-b border-solid content-stretch flex items-center justify-between pb-[17px] relative w-full responsive-stack-mobile" data-node-id="39:9605" data-name="HorizontalBorder">
+                  <div class="relative" data-node-id="39:9606" data-name="Container">
+                    <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                      <div class="bg-[#d9e6dc] content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[40px]" data-node-id="39:9607" data-name="Background">
+                        <div class="relative shrink-0 size-[16.667px]" data-node-id="39:9608" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/c1487d36-258d-4460-aaf5-0555405d4bbb.svg">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:9610" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start mb-[-1px] relative w-full" data-node-id="39:9611" data-name="Heading 2">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#00251d] text-[20px] tracking-[-0.2px]" data-node-id="39:9612">
+                            <p class="leading-[27px]">Datos del Alumno y Facturación</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9613" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#414845] text-[14px]" data-node-id="39:9614">
+                            <p class="leading-[20.3px]">Identidad oficial para emisión del diploma y comprobante fiscal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#e5f0eb] relative rounded-[9999px] shrink-0" data-node-id="39:9615" data-name="Button">
+                    <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[6px] items-center px-[12px] py-[6px] relative size-full">
+                      <div class="relative shrink-0 size-[10.5px]" data-node-id="39:9616" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/134a40e8-f888-41c1-9508-11b0b582f775.svg">
+                      </div>
+                      <div class="relative shrink-0 flex items-center justify-center" data-node-id="39:9618" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#141e1b] text-[13px] text-center tracking-[0.26px] whitespace-nowrap relative" data-node-id="39:9619">
+                          <p class="leading-[16.9px]">Modificar datos</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex gap-[16px] items-start justify-center relative w-full responsive-flex-2" data-node-id="39:9620" data-name="Container">
+                  <div class="bg-[#ebf6f1] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px pb-[17.7px] pt-[13px] px-[14px] relative" data-node-id="39:9621" data-name="Background">
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9622" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#414845] text-[11px] tracking-[0.55px] uppercase w-full" data-node-id="39:9623">
+                        <p class="leading-[13.2px]">TITULAR DE LA MATRÍCULA</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9624" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#141e1b] text-[16px] w-full" data-node-id="39:9625">
+                        <p class="leading-[24px]">Dra. Sofía Almendra Valenzuela</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[4px] relative w-full" data-node-id="39:9626" data-name="Margin">
+                      <div class="content-stretch flex gap-[8px] items-center relative w-full responsive-wrap-mobile" data-node-id="39:9627" data-name="Container">
+                        <div class="relative shrink-0 flex items-center" data-node-id="39:9628" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#414845] text-[14px] whitespace-nowrap relative" data-node-id="39:9629">
+                            <p class="leading-[20.3px]">DNI 38.412.980</p>
+                          </div>
+                        </div>
+                        <div class="relative shrink-0 flex items-center" data-node-id="39:9630" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#c1c8c4] text-[14px] whitespace-nowrap relative" data-node-id="39:9631">
+                            <p class="leading-[20.3px]">•</p>
+                          </div>
+                        </div>
+                        <div class="bg-[#e5f0eb] content-stretch flex flex-col items-start px-[8px] relative rounded-[16px]" data-node-id="39:9632" data-name="Background">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#00251d] text-[12px]" data-node-id="39:9633">
+                            <p class="leading-[16px]">CUIT Factura A: 27-38412980-4</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#ebf6f1] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start min-w-px pb-[14px] pt-[13px] px-[14px] relative" data-node-id="39:9634" data-name="Background">
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9635" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#414845] text-[11px] tracking-[0.55px] uppercase w-full" data-node-id="39:9636">
+                        <p class="leading-[13.2px]">CANALES DE ENLACE Y AULA</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="39:9637" data-name="Container">
+                      <div class="h-[10.667px] relative shrink-0 w-[13.333px]" data-node-id="39:9638" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/c314664f-1094-4165-a521-d211658cea52.svg">
+                      </div>
+                      <div class="relative flex items-center" data-node-id="39:9640" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#141e1b] text-[14px] relative" data-node-id="39:9641">
+                          <p class="leading-[20.3px]">sofia.valenzuela@med.ar</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[4px] relative shrink-0 w-full" data-node-id="39:9642" data-name="Margin">
+                      <div class="content-stretch flex gap-[6px] items-center relative shrink-0 w-full" data-node-id="39:9643" data-name="Container">
+                        <div class="relative shrink-0 size-[13.333px]" data-node-id="39:9644" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/ca21e629-6340-40cb-866b-481c821de438.svg">
+                        </div>
+                        <div class="relative shrink-0 flex items-center" data-node-id="39:9646" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#141e1b] text-[14px] whitespace-nowrap relative" data-node-id="39:9647">
+                            <p class="leading-[20.3px]">+54 9 2964 61-4820</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col gap-[16px] items-start p-[24px] relative rounded-[32px] w-full" data-node-id="39:9648" data-name="CARD 2: Resumen Pago Seleccionado">
+                <div class="border-[#dae5e0] border-b border-solid content-stretch flex items-center justify-between pb-[17px] relative w-full responsive-stack-mobile" data-node-id="39:9649" data-name="HorizontalBorder">
+                  <div class="relative" data-node-id="39:9650" data-name="Container">
+                    <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[12px] items-center relative size-full">
+                      <div class="bg-[#ffdcbd] content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[40px]" data-node-id="39:9651" data-name="Background">
+                        <div class="h-[13.333px] relative shrink-0 w-[16.667px]" data-node-id="39:9652" data-name="Container">
+                          <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/12f1ac3e-39c9-4d55-86c2-92b6d8ab627e.svg">
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative" data-node-id="39:9654" data-name="Container">
+                        <div class="content-stretch flex flex-col items-start mb-[-1px] relative w-full" data-node-id="39:9655" data-name="Heading 2">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#00251d] text-[20px] tracking-[-0.2px]" data-node-id="39:9656">
+                            <p class="leading-[27px]">Medio de Pago Seleccionado</p>
+                          </div>
+                        </div>
+                        <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9657" data-name="Container">
+                          <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#414845] text-[14px]" data-node-id="39:9658">
+                            <p class="leading-[20.3px]">Operación cifrada a través de procesador certificado</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#e5f0eb] relative rounded-[9999px] shrink-0" data-node-id="39:9659" data-name="Button">
+                    <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[6px] items-center px-[12px] py-[6px] relative size-full">
+                      <div class="relative shrink-0 size-[10.5px]" data-node-id="39:9660" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/134a40e8-f888-41c1-9508-11b0b582f775.svg">
+                      </div>
+                      <div class="relative shrink-0 flex items-center justify-center" data-node-id="39:9662" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#141e1b] text-[13px] text-center tracking-[0.26px] whitespace-nowrap relative" data-node-id="39:9663">
+                          <p class="leading-[16.9px]">Modificar pago</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex gap-[16px] items-start relative w-full responsive-stack-mobile" data-node-id="39:9664" data-name="Container">
+                  <div class="bg-[#ebf6f1] content-stretch flex flex-[1_0_0] gap-[16px] items-center min-w-px p-[16px] relative self-stretch" data-node-id="39:9665" data-name="Background">
+                    <div class="bg-[#00251d] content-stretch flex items-center justify-center relative rounded-[6px] shrink-0 w-[48px]" data-node-id="39:9666" data-name="Background">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-center text-white tracking-[0.6px] whitespace-nowrap" data-node-id="39:9667">
+                        <p class="leading-[16px]">VISA</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative" data-node-id="39:9668" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start mb-[-1px] relative w-full" data-node-id="39:9669" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#141e1b] text-[16px]" data-node-id="39:9670">
+                          <p class="leading-[24px]">Visa Crédito terminada en •••• 4289</p>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9671" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#414845] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:9672">
+                          <p class="leading-[13.2px]">DRA. SOFIA A. VALENZUELA</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-[#173b32] content-stretch flex flex-col items-start justify-center pb-[15.99px] pt-[15px] px-[16px] relative self-stretch" data-node-id="39:9673" data-name="Background">
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9674" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#c4ebde] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:9675">
+                        <p class="leading-[13.2px]">FINANCIACIÓN CONFIRMADA</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="39:9676" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap" data-node-id="39:9677">
+                        <p class="leading-[27px]">3 cuotas fijas de</p>
+                      </div>
+                    </div>
+                    <div class="[word-break:break-word] leading-[0] not-italic relative shrink-0 tracking-[-0.56px] w-full whitespace-nowrap flex items-center gap-[8px]" data-node-id="39:9678" data-name="Paragraph">
+                      <div class="flex flex-col font-['Liberation_Serif:Bold'] justify-center text-[#ffdcbd] text-[28px] relative" data-node-id="39:9679">
+                        <p class="leading-[30.8px]">$ 10.666 ARS </p>
+                      </div>
+                      <div class="flex flex-col font-['Liberation_Serif:Regular'] justify-center text-[#d1ddd8] text-[12px] relative" data-node-id="39:9680">
+                        <p class="leading-[16px]">/ mes</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex gap-[16px] items-center pt-[12px] relative w-full responsive-wrap-mobile" data-node-id="39:9681" data-name="Container">
+                  <div class="content-stretch flex gap-[6px] items-center relative" data-node-id="39:9682" data-name="Container">
+                    <div class="h-[14px] relative shrink-0 w-[10.667px]" data-node-id="39:9683" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/d0ddae58-813f-4670-8fac-c29cd39bfccb.svg">
+                    </div>
+                    <div class="relative flex items-center" data-node-id="39:9685" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] tracking-[0.44px] relative" data-node-id="39:9686">
+                        <p class="leading-[13.2px]">Protocolo 3D Secure 2.0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex gap-[6px] items-center relative" data-node-id="39:9687" data-name="Container">
+                    <div class="h-[14px] relative shrink-0 w-[14.667px]" data-node-id="39:9688" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/273fab17-413d-4f60-a4e9-01908d4bbb69.svg">
+                    </div>
+                    <div class="relative flex items-center" data-node-id="39:9690" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] tracking-[0.44px] relative" data-node-id="39:9691">
+                        <p class="leading-[13.2px]">Cumplimiento Normativo PCI-DSS Nivel 1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col gap-[20px] items-start p-[24px] relative rounded-[32px] w-full" data-node-id="39:9692" data-name="CARD 3: Términos, Aceptaciones y Garantía">
+                <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9693" data-name="Heading 2">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#00251d] text-[20px] tracking-[-0.2px] w-full" data-node-id="39:9694">
+                    <p class="leading-[27px]">Términos, Reglamento y Garantía</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col gap-[14px] items-start relative w-full" data-node-id="39:9695" data-name="Container">
+                  <label class="content-stretch flex gap-[12px] items-start relative w-full cursor-pointer" data-node-id="39:9696" data-name="Label">
+                    <div class="content-stretch flex flex-col h-[24px] items-start pt-[4px] relative shrink-0 w-[15.11px]" data-node-id="39:9697" data-name="Input:margin">
+                      <input type="checkbox" class="real-checkbox shrink-0" data-node-id="39:9698" data-name="Checkbox" checked>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative" data-node-id="39:9699" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#141e1b] text-[14px]" data-node-id="39:9700">
+                        <p class=""><span class="leading-[19.25px]">He leído y acepto los </span><span class="[text-decoration-skip-ink:none] [text-underline-position:from-font] [word-break:break-word] decoration-[1px] decoration-solid font-['Liberation_Serif:Regular'] leading-[19.25px] not-italic text-[#00251d] underline">Términos y Condiciones</span><span class="leading-[19.25px]"> de capacitados.ar y el </span><span class="[text-decoration-skip-ink:none] [text-underline-position:from-font] [word-break:break-word] decoration-[1px] decoration-solid font-['Liberation_Serif:Regular'] leading-[19.25px] not-italic text-[#00251d] underline">Reglamento de Laboratorio y Planta</span><span class="leading-[19.25px]"> de</span> Fundación Mirgor / Espacio Tecnológico RGR.</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="content-stretch flex gap-[12px] items-start relative w-full cursor-pointer" data-node-id="39:9701" data-name="Label">
+                    <div class="content-stretch flex flex-col h-[24px] items-start pt-[4px] relative shrink-0 w-[19.64px]" data-node-id="39:9702" data-name="Input:margin">
+                      <input type="checkbox" class="real-checkbox shrink-0" data-node-id="39:9703" data-name="Checkbox" checked>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pr-[30.73px] relative" data-node-id="39:9704" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#141e1b] text-[14px]" data-node-id="39:9705">
+                        <p class="leading-[19.25px]">Acepto recibir accesos de protocolo de planta, clave del campus virtual y recordatorios de clase a mi WhatsApp oficial.</p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="bg-[rgba(217,230,220,0.4)] content-stretch flex gap-[14px] items-start p-[16px] relative w-full" data-node-id="39:9706" data-name="Highlight Guarantee Badge Box">
+                  <div class="content-stretch flex flex-col h-[34px] items-start pt-[2px] relative shrink-0 w-[32px]" data-node-id="39:9707" data-name="Margin">
+                    <div class="bg-[#00251d] content-stretch flex items-center justify-center relative rounded-[9999px] shrink-0 size-[32px]" data-node-id="39:9708" data-name="Background">
+                      <div class="h-[13.333px] relative shrink-0 w-[10.667px]" data-node-id="39:9709" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/e59d0b6b-13e6-4cb3-94f3-599afdcf233e.svg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative flex flex-col items-start w-full gap-[8px]" data-node-id="39:9711" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9712" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#00251d] text-[15px] tracking-[0.15px]" data-node-id="39:9713">
+                        <p class="leading-[19.5px]">Garantía Oficial de Satisfacción 100% (7 Días Corridos)</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start pt-[1.15px] relative w-full" data-node-id="39:9714" data-name="Margin">
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9715" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#414845] text-[14px] w-full" data-node-id="39:9716">
+                          <p class="leading-[20.3px]">Si el contenido y la metodología del taller no cumplen con tus expectativas tras presenciar la primera clase interactiva, te reintegramos el 100% del arancel sin preguntas ni deducciones administrativas.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col items-start pb-[32px] relative w-full" data-node-id="39:9717" data-name="Action Footer Rows:margin">
+                <div class="content-stretch flex items-center justify-between pt-[8px] relative w-full responsive-stack-mobile" data-node-id="39:9718" data-name="Action Footer Rows">
+                  <div class="content-stretch flex gap-[8px] items-center px-[14px] py-[8px] relative rounded-[9999px] shrink-0" data-node-id="39:9719" data-name="Link">
+                    <div class="relative shrink-0 size-[10.667px]" data-node-id="39:9720" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/7820796b-8680-4307-a560-b7dd72495b8b.svg">
+                    </div>
+                    <div class="relative shrink-0 flex items-center" data-node-id="39:9722" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[13px] tracking-[0.26px] relative" data-node-id="39:9723">
+                        <p class="leading-[16.9px]">Volver a Medio de Pago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="bg-[#00251d] content-stretch cursor-pointer flex gap-[12px] items-center justify-center px-[32px] py-[16px] relative rounded-[9999px] shrink-0" data-node-id="39:9724" data-name="Button">
+                    <div class="absolute bg-[rgba(255,255,255,0)] inset-[0_0.33px_-0.5px_0] rounded-[9999px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)]" data-node-id="39:9725" data-name="Button:shadow"></div>
+                    <div class="relative flex items-center justify-center" data-node-id="39:9726" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[15px] text-center text-white tracking-[0.15px] relative" data-node-id="39:9727">
+                        <p class="leading-[19.5px]">Confirmar Inscripción y Pagar $32.000 ARS</p>
+                      </div>
+                    </div>
+                    <div class="relative shrink-0 size-[13.333px]" data-node-id="39:9728" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/e1a2bf90-fa8e-4dfb-81f8-231873e86127.svg">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-[9/span_4] content-stretch flex flex-col gap-[16px] items-start justify-self-stretch relative row-1 self-start" data-node-id="39:9730" data-name="RIGHT COLUMN: Sticky Order Summary (35% on Desktop -&gt; cols 4)">
+              <div class="bg-white content-stretch flex flex-col gap-[16px] items-start overflow-clip p-[20px] relative rounded-[32px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] w-full" data-node-id="39:9731" data-name="Order Card Container">
+                <div class="bg-[#e5f0eb] content-stretch flex flex-col h-[160px] items-start justify-center overflow-clip relative w-full" data-node-id="39:9732" data-name="Course Header with Thumbnail">
+                  <div class="flex-[1_0_0] min-h-px relative w-full" data-node-id="39:9733" data-name="AB6AXuBgpAtOyT9f5INH5BdxHeNspInzJAo57oKcTduxyXRAqY6is1zU0fbj5_hJv0NhbO_PQLH8ELuaj973NIX147GkglTWbmG2pkvJS6xwMKJalV1NyMISnKGFcXtDJQmxOazV2TzGk8g0rmnICW7KcYtV_uv3J--49AbVDS57amgKwGvzGHJq5MdUgDwAqigJ-mldMb7STvJS23JKT778BD7D6MSsa_3cuCcoZD4hxuc">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" class="absolute h-[106.26%] left-0 max-w-none top-[-3.13%] w-full" src="assets/63607f6a-414a-4c43-8214-9551bdcd6f10.png">
+                    </div>
+                  </div>
+                  <div class="absolute bg-gradient-to-t from-[rgba(0,37,29,0.8)] inset-[0_0.33px_0_0] to-[rgba(0,37,29,0)] via-1/2 via-[rgba(0,37,29,0)]" data-node-id="39:9734" data-name="Gradient"></div>
+                  <div class="absolute backdrop-blur-[4px] bg-[rgba(255,255,255,0.9)] left-[10px] rounded-[9999px] top-[13.4px] flex items-center gap-[8px] px-[12px] py-[6px]" data-node-id="39:9735" data-name="Overlay+OverlayBlur">
+                    <div class="bg-[#d29049] rounded-[9999px] size-[6px] relative shrink-0" data-node-id="39:9736" data-name="Background"></div>
+                    <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#00251d] text-[11px] tracking-[0.55px] uppercase relative" data-node-id="39:9737">
+                      <p class="leading-[13.2px]">PRESENCIAL EN PLANTA + LAB</p>
+                    </div>
+                  </div>
+                  <div class="absolute bottom-[10px] content-stretch flex flex-col items-start left-[12px] right-[12.33px]" data-node-id="39:9738" data-name="Container">
+                    <div class="content-stretch flex flex-col items-start opacity-90 relative shrink-0 w-full" data-node-id="39:9739" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[11px] text-white tracking-[0.44px] w-full" data-node-id="39:9740">
+                        <p class="leading-[13.2px]">Industria &amp; Tecnología</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9741" data-name="Heading 3">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[20px] text-white tracking-[-0.2px] w-full" data-node-id="39:9742">
+                        <p class="leading-[25px]">Introducción a Procesos Industriales y Manufactura Electrónica</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-[#ebf6f1] content-stretch flex flex-col gap-[10px] items-start p-[12px] relative w-full" data-node-id="39:9743" data-name="Instructor and Scheduling Spec Details">
+                  <div class="content-stretch flex gap-[10px] items-center relative w-full" data-node-id="39:9744" data-name="Container">
+                    <div class="bg-[#d9e6dc] content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="39:9745" data-name="Background">
+                      <div class="flex-[1_0_0] min-h-px relative w-full" data-node-id="39:9746" data-name="AB6AXuDr0dsz6PsMC_azzFnB60VR8H383geGc9XLEkgBXTLF0uGQREnMtiFnlMLQCoBc0PYDnKnc7eBt5f69UodKO5dhTd-9CPANv9zqyACZE8VtsHFtCQgjWb-0yYWIjIgs8vPDTsI_dibgH5Mer23T9FVUDZGi70rBxbfKuM40TD4kk9rE3VjzuMSbIX2q-JlTjrkDATko_jXucO3yCPNmho38dA4F_SYMWK4MAvMEo-U">
+                        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                          <img alt="" class="absolute left-0 max-w-none size-full top-0" src="assets/6218987f-c505-4ba3-b5f2-dcb9ede9b45a.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative flex flex-col items-start w-full gap-[8px]" data-node-id="39:9747" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9748" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#141e1b] text-[11px] tracking-[0.44px]" data-node-id="39:9749">
+                          <p class="leading-[13.2px]">Ing. Roberto Daneri &amp; Equipo Técnico Fabril</p>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9750" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#414845] text-[11px] tracking-[0.44px]" data-node-id="39:9751">
+                          <p class="leading-[13.2px]">Polo Industrial Río Grande</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col h-[5px] items-start py-[2px] relative shrink-0 w-full" data-node-id="39:9752" data-name="Margin">
+                    <div class="bg-[#dae5e0] h-px relative shrink-0 w-full" data-node-id="39:9753" data-name="Horizontal Divider"></div>
+                  </div>
+                  <div class="gap-x-[8px] gap-y-[8px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[__26.38px_39.56px] relative w-full" data-node-id="39:9754" data-name="Container">
+                    <div class="col-1 content-stretch flex gap-[6px] items-center justify-self-stretch relative row-1 shrink-0" data-node-id="39:9755" data-name="Container">
+                      <div class="h-[13.333px] relative shrink-0 w-[12px]" data-node-id="39:9756" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/ad3ccae6-71ff-4699-bbf1-80557851a882.svg">
+                      </div>
+                      <div class="relative shrink-0 flex items-center" data-node-id="39:9758" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] tracking-[0.44px] whitespace-nowrap relative" data-node-id="39:9759">
+                          <p class="leading-[13.2px]">Inicia 15 Nov</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 content-stretch flex gap-[6px] items-center justify-self-stretch relative row-1" data-node-id="39:9760" data-name="Container">
+                      <div class="relative shrink-0 size-[13.333px]" data-node-id="39:9761" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/25b14469-2d5d-4692-b4a0-23abafbbf9e0.svg">
+                      </div>
+                      <div class="relative flex items-center" data-node-id="39:9763" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] tracking-[0.44px] relative" data-node-id="39:9764">
+                          <p class="leading-[13.2px] mb-0">6 Semanas (36 hs cátedra)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1 content-stretch flex gap-[6px] items-center justify-self-stretch relative row-2" data-node-id="39:9765" data-name="Container">
+                      <div class="h-[14px] relative shrink-0 w-[10.667px]" data-node-id="39:9766" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/17e9e654-d722-45ad-a5e9-1932f65d8b09.svg">
+                      </div>
+                      <div class="relative flex items-center" data-node-id="39:9768" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] tracking-[0.44px] relative" data-node-id="39:9769">
+                          <p class="leading-[13.2px]">Certificado Homologado IPC-A- 610</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 content-stretch flex gap-[6px] items-center justify-self-stretch relative row-2 shrink-0" data-node-id="39:9770" data-name="Container">
+                      <div class="h-[10.667px] relative shrink-0 w-[14.667px]" data-node-id="39:9771" data-name="Container">
+                        <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/4cbd4d3f-8bbe-4d97-afda-d5e7f30d6426.svg">
+                      </div>
+                      <div class="relative shrink-0 flex items-center" data-node-id="39:9773" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] tracking-[0.44px] whitespace-nowrap relative" data-node-id="39:9774">
+                          <p class="leading-[13.2px]">Cupo reservado #04</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col gap-[8px] items-start pt-[4px] relative w-full" data-node-id="39:9775" data-name="Price Breakdown">
+                  <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:9776" data-name="Container">
+                    <div class="relative flex items-center" data-node-id="39:9777" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#414845] text-[14px] relative" data-node-id="39:9778">
+                        <p class="leading-[20.3px]">Arancel General de Matrícula</p>
+                      </div>
+                    </div>
+                    <div class="relative shrink-0 flex items-center" data-node-id="39:9779" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#414845] text-[14px] whitespace-nowrap relative" data-node-id="39:9780">
+                        <p class="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid leading-[20.3px] line-through">$ 40.000 ARS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:9781" data-name="Container">
+                    <div class="relative flex items-center" data-node-id="39:9782" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#00251d] text-[14px] relative" data-node-id="39:9783">
+                        <p class="leading-[20.3px]">Beca Promoción Río Grande (20% OFF)</p>
+                      </div>
+                    </div>
+                    <div class="relative shrink-0 flex items-center" data-node-id="39:9784" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#00251d] text-[14px] relative" data-node-id="39:9785">
+                        <p class="leading-[20.3px]">-$ 8.000 ARS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex items-center justify-between relative w-full responsive-wrap-mobile" data-node-id="39:9786" data-name="Container">
+                    <div class="relative flex items-center" data-node-id="39:9787" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#414845] text-[14px] relative" data-node-id="39:9788">
+                        <p class="leading-[20.3px]">Emisión de Certificado y Materiales</p>
+                      </div>
+                    </div>
+                    <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="39:9789" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#00251d] text-[12px] uppercase whitespace-nowrap" data-node-id="39:9790">
+                        <p class="leading-[16px]">BONIFICADO</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex flex-col h-[9px] items-start py-[4px] relative shrink-0 w-full" data-node-id="39:9791" data-name="Margin">
+                    <div class="bg-[#dae5e0] h-px relative shrink-0 w-full" data-node-id="39:9792" data-name="Horizontal Divider"></div>
+                  </div>
+                  <div class="relative w-full flex flex-col items-start gap-[8px]" data-node-id="39:9793" data-name="Container">
+                    <div class="relative w-full flex flex-col items-start gap-[8px]" data-node-id="39:9794" data-name="Container">
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9795" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#00251d] text-[11px] tracking-[0.55px] uppercase" data-node-id="39:9796">
+                          <p class="leading-[13.2px]">TOTAL FINAL A PAGAR</p>
+                        </div>
+                      </div>
+                      <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="39:9797" data-name="Container">
+                        <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#414845] text-[11px] tracking-[0.44px]" data-node-id="39:9798">
+                          <p class="leading-[13.2px]">IVA incluido - Factura A o B</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="[word-break:break-word] content-stretch flex items-end leading-[0] not-italic pb-[0.8px] tracking-[-0.56px] whitespace-nowrap relative w-full" data-node-id="39:9799" data-name="Paragraph">
+                      <div class="flex flex-col font-['Liberation_Serif:Bold'] justify-center relative shrink-0 text-[#00251d] text-[28px]" data-node-id="39:9800">
+                        <p class="leading-[30.8px]">$ 32.000 </p>
+                      </div>
+                      <div class="flex flex-col font-['Liberation_Serif:Regular'] justify-center relative shrink-0 text-[#414845] text-[14px]" data-node-id="39:9801">
+                        <p class="leading-[20px]">ARS</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-[#e5f0eb] content-stretch flex items-center justify-between pl-[12px] pr-[11.99px] py-[12px] relative w-full responsive-wrap-mobile" data-node-id="39:9802" data-name="Secure Purchase Guarantee Pill">
+                  <div class="content-stretch flex gap-[8px] items-center relative" data-node-id="39:9803" data-name="Container">
+                    <div class="h-[14px] relative shrink-0 w-[10.667px]" data-node-id="39:9804" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/8141b345-5f8f-45cb-a02c-914cbec19d6f.svg">
+                    </div>
+                    <div class="relative flex items-center" data-node-id="39:9806" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#141e1b] text-[11px] tracking-[0.44px] relative" data-node-id="39:9807">
+                        <p class="leading-[13.2px]">Transacción Segura 100%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative shrink-0 flex items-center" data-node-id="39:9808" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] tracking-[0.44px] whitespace-nowrap relative" data-node-id="39:9809">
+                      <p class="leading-[13.2px]">TLS 1.3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex items-center p-[16px] relative rounded-[32px] w-full responsive-wrap-mobile" data-node-id="39:9810" data-name="Trust Badges Under Summary">
+                <div class="content-stretch flex flex-col gap-[3px] items-center relative shrink-0" data-node-id="39:9811" data-name="Paragraph">
+                  <div class="h-[17.5px] relative shrink-0 w-[15px]" data-node-id="39:9812" data-name="Icon">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/8a96cebc-60ea-423b-9e03-5a15d0bfa398.svg">
+                  </div>
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[11px] text-center tracking-[0.44px] whitespace-nowrap" data-node-id="39:9813">
+                    <p class="leading-[13.2px]">Soporte 24/7</p>
+                  </div>
+                </div>
+                <div class="bg-[#dae5e0] h-[32px] relative shrink-0 w-px" data-node-id="39:9814" data-name="Vertical Divider"></div>
+                <div class="content-stretch flex flex-col gap-[3px] items-center relative shrink-0" data-node-id="39:9815" data-name="Paragraph">
+                  <div class="h-[15px] relative shrink-0 w-[18.333px]" data-node-id="39:9816" data-name="Icon">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/733d70d7-1867-45e6-82b6-744b4c1f13a9.svg">
+                  </div>
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[11px] text-center tracking-[0.44px] whitespace-nowrap" data-node-id="39:9817">
+                    <p class="leading-[13.2px]">Validez Laboral</p>
+                  </div>
+                </div>
+                <div class="bg-[#dae5e0] h-[32px] relative shrink-0 w-px" data-node-id="39:9818" data-name="Vertical Divider"></div>
+                <div class="content-stretch flex flex-col gap-[3px] items-center relative shrink-0" data-node-id="39:9819" data-name="Paragraph">
+                  <div class="h-[13.333px] relative shrink-0 w-[18.333px]" data-node-id="39:9820" data-name="Icon">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/c8216dd1-32de-4811-8383-316387035c57.svg">
+                  </div>
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[11px] text-center tracking-[0.44px] whitespace-nowrap" data-node-id="39:9821">
+                    <p class="leading-[13.2px]">Acceso Vitalicio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-[rgba(235,246,241,0.7)] border-[rgba(193,200,196,0.3)] border-solid border-t content-stretch flex flex-col items-center justify-end pb-[24px] pt-[25px] px-[64px] site-footer" data-node-id="39:9538" data-name="Footer modal compra">
+        <div class="max-w-[1152px] relative w-full mx-auto" data-node-id="I39:9538;29:2411" data-name="Container">
+          <div class="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-between max-w-[inherit] px-[16px] relative size-full">
+            <div class="content-stretch flex gap-[24px] items-center relative responsive-stack-mobile" data-node-id="I39:9538;29:2417" data-name="Container">
+              <div class="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I39:9538;29:2418" data-name="Link">
+                <div class="relative shrink-0 size-[13.333px]" data-node-id="I39:9538;29:2419" data-name="Container">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/37bc41b0-fb1e-4d66-b52a-0f15167cf1a9.svg">
+                </div>
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#414845] text-[11px] tracking-[0.44px] whitespace-nowrap" data-node-id="I39:9538;29:2421">
+                  <p class="leading-[13.2px]">¿Necesitás ayuda?</p>
+                </div>
+              </div>
+              <div class="relative shrink-0 flex items-center" data-node-id="I39:9538;29:2422" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[11px] text-[rgba(193,200,196,0.5)] tracking-[0.44px] whitespace-nowrap relative" data-node-id="I39:9538;29:2423">
+                  <p class="leading-[13.2px]">|</p>
+                </div>
+              </div>
+              <div class="opacity-90 relative flex items-center" data-node-id="I39:9538;29:2424" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Libertinus_Serif:Regular'] justify-center leading-[0] not-italic text-[#414845] text-[14px] relative" data-node-id="I39:9538;39:8551">
+                  <p class="leading-[20.3px]">©2026 capacitados.ar - República Argentina. Todos los derechos reservados.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="cancel-modal-backdrop backdrop-blur-[12px] bg-[rgba(0,37,29,0.75)] flex justify-center p-[24px]" data-node-id="59:10766" data-name="MODAL BACKDROP OVERLAY" id="cancel-modal" data-open="false">
+        <div class="bg-white content-stretch flex flex-[1_0_0] flex-col items-start max-w-[560px] min-w-px overflow-clip p-[32px] relative rounded-[32px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]" data-node-id="59:10767" data-name="Dialog - MODAL FOREGROUND DIALOG CONTAINER">
+          <div class="content-stretch flex flex-col items-start pb-[16px] relative w-full mb-[90px] pb-[32px]" data-node-id="59:10768" data-name="Top Subtle Status &amp; Close Bar:margin">
+            <div class="content-stretch flex items-center justify-between relative w-full" data-node-id="59:10769" data-name="Top Subtle Status &amp; Close Bar">
+              <div class="bg-[#ffdcbd] content-stretch flex gap-[6px] items-center px-[12px] py-[4px] relative rounded-[9999px]" data-node-id="59:10770" data-name="Status Warning Pill">
+                <div class="h-[12.667px] relative shrink-0 w-[14.667px]" data-node-id="59:10771" data-name="Container">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/de9a66ca-ce7c-4354-a33d-809d1bc2cef5.svg">
+                </div>
+                <div class="relative flex items-center" data-node-id="59:10773" data-name="Container">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#2c1600] text-[11px] tracking-[0.55px] uppercase relative" data-node-id="59:10774">
+                    <p class="leading-[13.2px]">INTERRUPCIÓN DE INSCRIPCIÓN</p>
+                  </div>
+                </div>
+              </div>
+              <button class="content-stretch cursor-pointer flex items-center justify-center relative rounded-[9999px] shrink-0 size-[36px]" data-node-id="59:10775" data-name="Button - Cerrar ventana y continuar comprando">
+                <div class="relative shrink-0 size-[11.667px]" data-node-id="59:10776" data-name="Container">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/1da048b4-6eb5-4e22-9752-e90c4b9137bc.svg">
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="content-stretch flex flex-col gap-[10px] items-start relative w-full" data-node-id="59:10778" data-name="Icon &amp; Primary Title Header">
+            <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="59:10779" data-name="Heading 2">
+              <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#00251d] text-[32px] tracking-[-0.8px] w-full" data-node-id="59:10780">
+                <p class="leading-[44px]">¿Estás seguro de cancelar tu inscripción?</p>
+              </div>
+            </div>
+            <div class="content-stretch flex flex-col items-start relative w-full" data-node-id="59:10781" data-name="Container">
+              <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic relative text-[#414845] text-[16px] w-full" data-node-id="59:10782">
+                <p class="leading-[26px]">Estás a sólo un paso de asegurar tu vacante presencial en Río Grande. Si <span class="leading-[26px]">abandonás ahora, </span><span class="[word-break:break-word] font-['Liberation_Serif:Bold'] leading-[26px] not-italic text-[#141e1b]">no se realizará ningún débito</span><span class="leading-[26px]">, pero tu lugar quedará</span> liberado inmediatamente para el siguiente postulante en lista de espera.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-stretch flex flex-col items-start py-[24px] relative w-full" data-node-id="59:10783" data-name="Consequence / Course Summary Card:margin">
+            <div class="bg-[#ebf6f1] relative rounded-[16px] w-full flex flex-col items-start p-[18px] gap-[10px]" data-node-id="59:10784" data-name="Consequence / Course Summary Card">
+              <div class="content-stretch flex gap-[14px] items-start pb-[12px] relative w-full" data-node-id="59:10785" data-name="Course Meta Recap">
+                <div class="bg-[#173b32] content-stretch flex items-center justify-center relative rounded-[48px] shrink-0 size-[48px]" data-node-id="59:10786" data-name="Background">
+                  <div class="h-[18.506px] relative shrink-0 w-[18.032px]" data-node-id="59:10787" data-name="Container">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/a1bcaa71-96ce-4f48-bd98-94995d5ea5fe.svg">
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px relative" data-node-id="59:10789" data-name="Container">
+                  <div class="content-stretch flex flex-col items-start overflow-clip relative w-full" data-node-id="59:10790" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic overflow-hidden relative text-[#00251d] text-[20px] text-ellipsis tracking-[-0.2px] w-full" data-node-id="59:10791">
+                      <p class="leading-[25px]">Introducción a Procesos Industriales y Manufactura Electrónica</p>
+                    </div>
+                  </div>
+                  <div class="content-stretch flex gap-[6px] items-center relative w-full" data-node-id="59:10792" data-name="Container">
+                    <div class="h-[12.5px] relative shrink-0 w-[10px]" data-node-id="59:10793" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/d686eb10-4d17-4970-8435-6e4ba72cc89b.svg">
+                    </div>
+                    <div class="relative flex items-center" data-node-id="59:10795" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[13px] tracking-[0.26px] relative" data-node-id="59:10796">
+                        <p class="leading-[16.9px]">Sede Planta Mirgor · Río Grande, Tierra del Fuego</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[rgba(255,220,189,0.4)] content-stretch flex gap-[12px] items-center p-[12px] rounded-[48px] relative w-full" data-node-id="59:10797" data-name="Scarcity &amp; Countdown Alert Row">
+                <div class="h-[19.25px] relative shrink-0 w-[16.5px]" data-node-id="59:10798" data-name="Container">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/0b65f8ac-163e-4dd4-a480-ac0a734ac2a4.svg">
+                </div>
+                <div class="content-stretch flex flex-col items-start pr-[30.8px] relative" data-node-id="59:10800" data-name="Container">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#331a00] text-[14px]" data-node-id="59:10801">
+                    <p class="leading-[17.5px]"><span class="font-bold text-[#331a00]">Tu cupo reservado (Lugar 17 de 24)</span> expira automáticamente en <span class="underline font-bold">08:41</span> minutos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white content-stretch flex items-center justify-between p-[12px] rounded-[48px] relative w-full responsive-wrap-mobile" data-node-id="59:10802" data-name="Frozen Price Benefit Row">
+                <div class="content-stretch flex gap-[8px] items-center relative" data-node-id="59:10803" data-name="Container">
+                  <div class="h-[18.333px] relative shrink-0 w-[15.833px]" data-node-id="59:10804" data-name="Container">
+                    <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/73af4626-03a1-41ef-8dbe-a216f9e12ea3.svg">
+                  </div>
+                  <div class="relative flex items-center" data-node-id="59:10806" data-name="Container">
+                    <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Regular'] justify-center leading-[0] not-italic text-[#141e1b] text-[13px] tracking-[0.26px] relative" data-node-id="59:10807">
+                      <p class="leading-[16.9px]">Arancel congelado por convenio TDF:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start relative shrink-0" data-node-id="59:10808" data-name="Container">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#00251d] text-[20px] tracking-[-0.2px] whitespace-nowrap" data-node-id="59:10809">
+                    <p class="leading-[27px]">$ 32.000 ARS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-stretch flex flex-col items-start px-[4px] relative w-full" data-node-id="59:10810" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#556159] text-[11px] tracking-[0.44px]" data-node-id="59:10811">
+                  <p class=""><span class="leading-[13.2px]">Opción de 3 cuotas fijas sin interés de </span><span class="[word-break:break-word] font-['Liberation_Serif:Bold'] leading-[13.2px] not-italic text-[#141e1b]">$10.666 ARS</span><span class="leading-[13.2px]"> con tarjetas bancarizadas de la</span> provincia o Mercado Pago.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-stretch cursor-pointer flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="59:10812" data-name="Action Buttons (Heuristic #3: User Freedom + Clear UX Hierarchy)">
+            <button class="bg-[#173b32] content-stretch flex gap-[8px] items-center justify-center px-[24px] relative rounded-[9999px] shrink-0 w-full py-[14px]" data-node-id="59:10813" data-name="Button - Primary Retention CTA: Stay and complete checkout">
+              <div class="absolute bg-[rgba(255,255,255,0)] h-[56px] left-0 right-0 rounded-[9999px] shadow-[0px_4px_6px_-1px_rgba(0,0,0,0.1),0px_2px_4px_-2px_rgba(0,0,0,0.1)] top-0" data-node-id="59:10814" data-name="Button - Primary Retention CTA: Stay and complete checkout:shadow"></div>
+              <div class="relative flex items-center justify-center" data-node-id="59:10815" data-name="Container">
+                <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[15px] text-center text-white tracking-[0.15px] relative" data-node-id="59:10816">
+                  <p class="leading-[19.5px]">Continuar con mi inscripción</p>
+                </div>
+              </div>
+              <div class="relative shrink-0 size-[13.333px]" data-node-id="59:10817" data-name="Container">
+                <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/3254c357-2f28-46d0-abba-73c809a3154f.svg">
+              </div>
+            </button>
+            <a class="content-stretch flex flex-col items-center px-[24px] py-[14px] relative rounded-[9999px] w-full" data-node-id="59:10819" data-name="Link - Secondary Destructive CTA: Confirmed Abort">
+              <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic relative text-[#ba1a1a] text-[13px] text-center tracking-[0.26px]" data-node-id="59:10820">
+                <p class="leading-[16.9px]">Sí, cancelar operación y salir</p>
+              </div>
+            </a>
+          </div>
+          <div class="content-stretch flex flex-col items-start pt-[20px] relative w-full" data-node-id="59:10821" data-name="Security / Assistance Micro-Footer:margin">
+            <div class="content-stretch flex flex-col gap-[8px] items-start pt-[16px] relative w-full" data-node-id="59:10822" data-name="Security / Assistance Micro-Footer">
+              <div class="content-stretch flex gap-[6px] items-center justify-center relative w-full" data-node-id="59:10823" data-name="Container">
+                <div class="relative shrink-0 size-[12px]" data-node-id="59:10824" data-name="Container">
+                  <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/b6f28abd-9b7f-4bc8-a2e7-d58a20078f98.svg">
+                </div>
+                <div class="relative flex items-center justify-center" data-node-id="59:10826" data-name="Container">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#556159] text-[11px] text-center tracking-[0.44px] relative" data-node-id="59:10827">
+                    <p class="leading-[13.2px]">Tus datos de postulación no serán procesados ni almacenados.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-center flex flex-wrap gap-[4px] items-center justify-center relative w-full responsive-stack-mobile" data-node-id="59:10828" data-name="Container">
+                <div class="relative flex items-center justify-center" data-node-id="59:10829" data-name="Container">
+                  <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#414845] text-[11px] text-center tracking-[0.44px] relative" data-node-id="59:10830">
+                    <p class="leading-[13.2px]">¿Tenés problemas con tu tarjeta o necesitás soporte?</p>
+                  </div>
+                </div>
+                <div class="content-stretch flex flex-col items-start pl-[4px] relative" data-node-id="59:10831" data-name="Link:margin">
+                  <div class="content-stretch flex gap-[1.99px] items-center relative" data-node-id="59:10832" data-name="Link">
+                    <div class="relative shrink-0 size-[11.667px]" data-node-id="59:10833" data-name="Container">
+                      <img alt="" class="absolute block inset-0 max-w-none size-full" src="assets/e8420345-923a-40b7-abec-583628099519.svg">
+                    </div>
+                    <div class="relative flex items-center justify-center" data-node-id="59:10835" data-name="Container">
+                      <div class="[word-break:break-word] flex flex-col font-['Liberation_Serif:Bold'] justify-center leading-[0] not-italic text-[#00251d] text-[11px] text-center tracking-[0.44px] relative" data-node-id="59:10836">
+                        <p class="leading-[13.2px]">WhatsApp (+54 9 2964 55-2233)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
