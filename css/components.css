@@ -635,19 +635,7 @@ select.real-select--field:hover {
 
 /* Barra inferior de navegación rápida del prototipo */
 .proto-dock {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 200;
-  max-width: calc(100vw - 16px);
-  background: rgba(0, 37, 29, 0.94);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(196, 235, 222, 0.22);
-  border-radius: 9999px;
-  padding: 5px 10px;
-  box-shadow: 0 10px 28px -4px rgba(0, 20, 15, 0.45);
+  display: none !important;
 }
 
 .proto-dock-inner {
