@@ -288,6 +288,118 @@ input.real-range {
   border-radius: 9999px;
 }
 
+/* ==========================================================================
+   Checkout Wizard & Friendly Layout Redesign
+   ========================================================================== */
+.checkout-stepper-modern {
+  background: rgba(235, 246, 241, 0.9) !important;
+  border: 1px solid rgba(23, 59, 50, 0.09) !important;
+  border-radius: 20px !important;
+  padding: 12px 24px !important;
+  box-shadow: 0 1px 4px rgba(23, 59, 50, 0.04) !important;
+}
+
+.checkout-stepper-modern [data-name*="Step"] [data-name*="Background"] {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  border-radius: 9999px !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+}
+
+.checkout-stepper-modern [data-name*="Step"] [data-name*="Background"] p {
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+
+.checkout-stepper-modern .stepper-title {
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  line-height: 18px !important;
+}
+
+.checkout-stepper-modern .stepper-sub {
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  line-height: 13px !important;
+  letter-spacing: 0.3px !important;
+}
+
+.checkout-friendly-form .checkout-section-title {
+  font-size: 22px !important;
+  line-height: 28px !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 800 !important;
+}
+
+.checkout-friendly-form .checkout-section-sub {
+  font-size: 13.5px !important;
+  line-height: 20px !important;
+  color: #414845 !important;
+}
+
+.checkout-friendly-form [data-name="Payment Method Tabs"] > div {
+  border-radius: 18px !important;
+  padding: 12px 14px !important;
+  cursor: pointer;
+  transition: all 0.15s ease !important;
+}
+
+.checkout-friendly-form [data-name="Card Mockup + Form Container"] {
+  padding: 24px !important;
+  border-radius: 24px !important;
+  gap: 22px !important;
+}
+
+.checkout-friendly-form [data-name="Realistic Credit Card Graphic"] {
+  max-width: 360px !important;
+  height: 180px !important;
+  padding: 18px 20px !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 22px -4px rgba(23, 59, 50, 0.22) !important;
+}
+
+.checkout-friendly-form [data-name="Masked Card Number Display"] [data-name="Shadow"] p {
+  font-size: 18px !important;
+  letter-spacing: 3px !important;
+  line-height: 24px !important;
+}
+
+.checkout-friendly-form [data-name="Card Bottom Bar: Holder & Expiry"] [data-name="Container"] p {
+  font-size: 12.5px !important;
+  line-height: 18px !important;
+}
+
+.checkout-friendly-form [data-name="Input Fields Form"] {
+  gap: 14px !important;
+}
+
+.checkout-friendly-form [data-name="Input"] {
+  padding: 10px 16px 10px 42px !important;
+  border-radius: 14px !important;
+  height: 44px !important;
+}
+
+.checkout-friendly-form [data-name="Input"] p {
+  font-size: 13.5px !important;
+  line-height: 20px !important;
+}
+
+.checkout-friendly-form [data-name="Label"] p {
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  color: #173b32 !important;
+  line-height: 16px !important;
+}
+
+.checkout-friendly-form [data-name="Installment Selector (Cuotas)"] select {
+  padding: 10px 36px 10px 42px !important;
+  border-radius: 14px !important;
+  font-size: 13px !important;
+  height: 44px !important;
+}
+
 /* Custom Select Dropdown UI para reemplazar el menú emergente nativo */
 .custom-select-wrapper {
   position: relative;
