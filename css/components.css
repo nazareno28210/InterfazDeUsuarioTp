@@ -689,3 +689,61 @@ select.real-select--field:hover {
   white-space: nowrap;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
+
+/* ==========================================================================
+   Interactive Syllabus Accordion (detalle-curso.html)
+   ========================================================================== */
+.syllabus-card {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(23, 59, 50, 0.08);
+}
+
+.syllabus-card.is-open {
+  box-shadow: 0 4px 16px -2px rgba(23, 59, 50, 0.09);
+  border-color: rgba(23, 59, 50, 0.22);
+}
+
+.syllabus-header {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease;
+}
+
+.syllabus-header:hover {
+  background-color: #f7fbf9;
+}
+
+.syllabus-chevron {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.syllabus-card.is-open .syllabus-chevron {
+  transform: rotate(180deg);
+}
+
+.syllabus-card.is-open .syllabus-badge-num {
+  background-color: #173b32 !important;
+}
+
+.syllabus-card.is-open .syllabus-badge-num p {
+  color: #f3fdf8 !important;
+}
+
+.syllabus-body {
+  border-top: 1px solid rgba(23, 59, 50, 0.08);
+  animation: syllabusFadeIn 0.22s ease-out;
+}
+
+@keyframes syllabusFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

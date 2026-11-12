@@ -736,32 +736,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. Interactive Syllabus Accordion on detalle-curso.html
   if (currentPage === 'detalle-curso.html') {
-    const moduleDetails = [
-      'recorrido práctico por layouts fabriles en Río Grande, balanceo de líneas de ensamble, takt time, estaciones de trabajo y estándares operativos en la industria electrónica fueguina.',
-      'protocolos de descarga electrostática (pulseras, taloneras y mantas ESD), uso correcto de EPP en planta industrial, ergonomía e identificación de riesgos operativos.',
-      'inspección visual bajo norma internacional IPC-A-610, criterios de aceptabilidad de soldadura SMD/THT, trazabilidad por código de barras/QR y registro de no conformidades.',
-      'práctica integradora en línea modelo de Fundación Mirgor con herramental real, simulación de turno productivo y evaluación técnica final para certificación oficial.'
-    ];
-    let modIdx = 0;
-    document.querySelectorAll('h4').forEach((h4) => {
-      const card = h4.closest('.bg-\\[\\#ebf6f1\\], .bg-white');
-      if (card && modIdx < moduleDetails.length) {
-        const detailText = moduleDetails[modIdx++];
-        card.setAttribute('data-interactive', 'true');
-        const extra = document.createElement('div');
-        extra.style.display = 'none';
-        extra.style.padding = '12px 20px 16px 68px';
-        extra.style.fontSize = '14px';
-        extra.style.lineHeight = '22px';
-        extra.style.color = '#414845';
-        extra.style.borderTop = '1px solid rgba(193, 200, 196, 0.35)';
-        extra.textContent = 'Contenido del módulo: ' + detailText;
-        card.parentElement.appendChild(extra);
-        card.addEventListener('click', () => {
-          const isOpen = extra.style.display === 'block';
-          extra.style.display = isOpen ? 'none' : 'block';
-        });
-      }
+    document.querySelectorAll('.syllabus-card').forEach((card) => {
+      const header = card.querySelector('.syllabus-header');
+      const body = card.querySelector('.syllabus-body');
+      if (!header || !body) return;
+
+      header.setAttribute('role', 'button');
+      header.setAttribute('tabindex', '0');
+      header.setAttribute('aria-expanded', card.classList.contains('is-open') ? 'true' : 'false');
+
+      const toggleCard = (e) => {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        const isOpen = card.classList.toggle('is-open');
+        body.style.display = isOpen ? 'block' : 'none';
+        header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      };
+
+      header.addEventListener('click', toggleCard);
+      header.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          toggleCard(e);
+        }
+      });
     });
   }
 
