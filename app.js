@@ -634,19 +634,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 7. Collapsible Filters Sidebar on screens smaller than PC (<= 1024px)
-  document.querySelectorAll('[data-name*="Sidebar Filters"]').forEach((aside) => {
+  document.querySelectorAll('[data-name="Aside - Left Sidebar Filters"]').forEach((aside) => {
+    if (aside.querySelector('.mobile-filter-toggle')) return;
+
     const toggleBtn = document.createElement('button');
     toggleBtn.type = 'button';
     toggleBtn.className = 'mobile-filter-toggle';
+    toggleBtn.setAttribute('aria-expanded', 'false');
     toggleBtn.innerHTML = '<svg class="inline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line><circle cx="8" cy="6" r="2" fill="currentColor"></circle><circle cx="16" cy="12" r="2" fill="currentColor"></circle><circle cx="10" cy="18" r="2" fill="currentColor"></circle></svg><span>Mostrar / Ocultar Filtros de Búsqueda</span>';
-    const filterCard = aside.firstElementChild;
-    if (filterCard) {
-      filterCard.classList.add('filters-collapsed-mobile');
-      aside.insertBefore(toggleBtn, filterCard);
-      toggleBtn.addEventListener('click', () => {
-        filterCard.classList.toggle('filters-collapsed-mobile');
-      });
+
+    const filterBody = document.createElement('div');
+    filterBody.className = 'filters-body filters-collapsed-mobile';
+    while (aside.firstChild) {
+      filterBody.appendChild(aside.firstChild);
     }
+
+    aside.appendChild(toggleBtn);
+    aside.appendChild(filterBody);
+
+    toggleBtn.addEventListener('click', () => {
+      const isCollapsed = filterBody.classList.toggle('filters-collapsed-mobile');
+      toggleBtn.setAttribute('aria-expanded', isCollapsed ? 'false' : 'true');
+    });
   });
 
   // 8. Live countdown timer on reservation badges (08:41 / 14:32)

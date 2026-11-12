@@ -412,8 +412,15 @@ select.real-select--field:hover {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   box-shadow: 0 2px 6px rgba(23, 59, 50, 0.15);
+}
+
+.filters-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Barra inferior de navegación rápida del prototipo */
